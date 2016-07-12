@@ -33,6 +33,7 @@ public class NotificationObserver {
                 assert(false, "Couldn't understand user info")
             }
         }
+        //observer =  NSNotificationCenter.defaultCenter().addObserverForName(<#T##name: String?##String?#>, object: <#T##AnyObject?#>, queue: <#T##NSOperationQueue?#>, usingBlock: <#T##(NSNotification) -> Void#>)
     }
 
     public func removeObserver() {

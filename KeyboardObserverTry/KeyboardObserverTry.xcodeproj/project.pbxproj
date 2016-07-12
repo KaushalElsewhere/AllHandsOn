@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E12EDDB31D34749E00FB5421 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12EDDB21D34749E00FB5421 /* KeyboardManager.swift */; };
 		E167DF481D3319E8005FF492 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167DF471D3319E8005FF492 /* AppDelegate.swift */; };
 		E167DF4A1D3319E8005FF492 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167DF491D3319E8005FF492 /* ViewController.swift */; };
 		E167DF4D1D3319E8005FF492 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E167DF4B1D3319E8005FF492 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E12EDDB21D34749E00FB5421 /* KeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
 		E167DF441D3319E8005FF492 /* KeyboardObserverTry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardObserverTry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E167DF471D3319E8005FF492 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E167DF491D3319E8005FF492 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				E167DF6F1D332DD3005FF492 /* Utility */,
 				E167DF471D3319E8005FF492 /* AppDelegate.swift */,
 				E167DF491D3319E8005FF492 /* ViewController.swift */,
+				E12EDDB21D34749E00FB5421 /* KeyboardManager.swift */,
 				E167DF4B1D3319E8005FF492 /* Main.storyboard */,
 				E167DF4E1D3319E8005FF492 /* Assets.xcassets */,
 				E167DF501D3319E8005FF492 /* LaunchScreen.storyboard */,
@@ -182,6 +185,7 @@
 			files = (
 				E167DF731D332DED005FF492 /* Box.swift in Sources */,
 				E167DF4A1D3319E8005FF492 /* ViewController.swift in Sources */,
+				E12EDDB31D34749E00FB5421 /* KeyboardManager.swift in Sources */,
 				E167DF7A1D332DF9005FF492 /* KeyboardWindowExtension.swift in Sources */,
 				E167DF7B1D332DF9005FF492 /* TypedNotifications.swift in Sources */,
 				E167DF751D332DED005FF492 /* MutableBox.swift in Sources */,
@@ -340,6 +344,7 @@
 				E167DF581D3319E8005FF492 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

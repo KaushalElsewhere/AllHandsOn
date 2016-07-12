@@ -8,12 +8,31 @@
 
 import UIKit
 extension ViewController: UITextFieldDelegate{
-    
+    func dismissKeyboard(){
+        self.view.endEditing(true)
+        //self.setEditing(false, animated: true)
+    }
 }
 extension ViewController{
     private func setupNotificationObservers() {
-        keyboardWillShowObserver = NotificationObserver(notification: Keyboard.Notifications.KeyboardWillShow, block: keyboardWillChangeFrame)
-        keyboardWillHideObserver = NotificationObserver(notification: Keyboard.Notifications.KeyboardWillHide, block: keyboardWillChangeFrame)
+        //keyboardWillShowObserver = NotificationObserver(notification: Keyboard.Notifications.KeyboardDidShow, block: keyboardWillChangeFrame)
+        //keyboardWillHideObserver = NotificationObserver(notification: Keyboard.Notifications.KeyboardWillHide, block: keyboardWillChangeFrame)
+        
+        NSNotificationCenter.defaultCenter().addObserverForName(UIKeyboardWillShowNotification, object: nil, queue: nil) { (note) in
+            let keyboardObj = KeyboardManager(notification: note)
+            keyboardObj.endFrame.origin.y
+            UIView.animateWithDuration(keyboardObj.duration, delay: 0, options: keyboardObj.options, animations: {
+                self.tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: keyboardObj.endFrame.height, right: 0)
+                }, completion: nil)
+            
+        }
+        NSNotificationCenter.defaultCenter().addObserverForName(UIKeyboardWillHideNotification, object: nil, queue: nil) { (note) in
+            let keyboardObj = KeyboardManager(notification: note)
+            UIView.animateWithDuration(keyboardObj.duration, delay: 0, options: keyboardObj.options, animations: {
+                self.tableView.contentInset = UIEdgeInsetsZero
+                }, completion: nil)
+            
+        }
     }
     
     private func removeNotificationObservers() {
@@ -31,6 +50,7 @@ extension ViewController{
 //        scrollView.scrollIndicatorInsets.bottom = bottomInset
 //        scrollView.contentOffset = CGPoint(x: 0, y: keyboard.active ? keyboard.bottomInset - 100 : 0)
     }
+    
 }
 extension ViewController: UITableViewDataSource{
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -91,18 +111,24 @@ class ViewController: UIViewController {
         footerView.backgroundColor = .whiteColor()
         tableView.tableFooterView = footerView
         
-        
-        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(self.view.endEditing(_:))))
+        let tap = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        self.view.addGestureRecognizer(tap)
         
         view.setNeedsDisplay()
         
-        self.setupNotificationObservers()
+        
         
     }
-//    override func viewDidDisappear(animated: Bool) {
-//        super.viewDidDisappear(animated)
-//        removeNotificationObservers()
-//    }
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+        
+        self.setupNotificationObservers()
+    }
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        //self.removeNotificationObservers()
+    }
 
 }
 
