@@ -98,3 +98,31 @@ quu.enqueue(10)
 quu.homogenous()
 
 
+//Understanding Box(subclassing generic classes)
+class Box<T> {
+    let box = Box<Int>()
+}
+class Gift<T>: Box<T>{
+    let gift = Gift<T>()
+}
+class StringBox: Box<String>{
+    let stringBox = StringBox()
+}
+
+//Enums with multiple generics associated values
+enum Result<ValueType, ErrorType> {
+    case Success(ValueType)
+    case Failure(ErrorType)
+}
+
+func divideOrError(x: Int, y: Int) -> Result<Int, String> {
+    guard y != 0 else {
+        return Result.Failure("Division by zero is undefined")
+    }
+    
+    return Result.Success(x / y)
+}
+let result1 = divideOrError(42, y: 2)
+let result2 = divideOrError(42, y: 0)
+
+
