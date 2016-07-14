@@ -124,5 +124,5 @@ func divideOrError(x: Int, y: Int) -> Result<Int, String> {
 }
 let result1 = divideOrError(42, y: 2)
 let result2 = divideOrError(42, y: 0)
-
+let result3 = divideOrError(0, y: 0)
 
