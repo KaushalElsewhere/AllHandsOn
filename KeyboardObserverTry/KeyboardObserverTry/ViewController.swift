@@ -20,6 +20,7 @@ extension ViewController{
         
         NSNotificationCenter.defaultCenter().addObserverForName(UIKeyboardWillShowNotification, object: nil, queue: nil) { (note) in
             let keyboardObj = KeyboardManager(notification: note)
+            print(note)
             keyboardObj.endFrame.origin.y
             UIView.animateWithDuration(keyboardObj.duration, delay: 0, options: keyboardObj.options, animations: {
                 self.tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: keyboardObj.endFrame.height, right: 0)
