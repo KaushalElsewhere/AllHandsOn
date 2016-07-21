@@ -53,7 +53,7 @@ class ViewController: UIViewController {
     @IBAction func didClickOnStart(sender: AnyObject) {
         
         //GCD
-        //gcdMethod()
+        //GCDMethod()
         
         //OperationQueue
         operationQueueMethod()
@@ -151,6 +151,7 @@ class ViewController: UIViewController {
         operation2.addDependency(operation1)
         operation3.addDependency(operation2)
         
+        //find better way to serialise the operations
     }
     
     @IBAction func sliderValueChanged(sender: UISlider) {
