@@ -75,17 +75,12 @@ struct S3Uploader {
     }
     
     static func uploadData(data: NSData, toBucket: String, key: String, handler: UploadAction? = nil){
-        
-        
-        
-        
+        //TODO: bucket method is pending
     }
     
     private static func uniqueString() -> String {
         return NSProcessInfo.processInfo().globallyUniqueString
     }
-    
-    
     
     private static func writeDataToFile(data: NSData) -> NSURL{
         let filename = uniqueString()
