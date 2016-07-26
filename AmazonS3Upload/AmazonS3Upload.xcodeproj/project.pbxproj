@@ -15,7 +15,7 @@
 		E19BAD1D1D46FB540038EA88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19BAD1B1D46FB540038EA88 /* LaunchScreen.storyboard */; };
 		E19BAD251D471A840038EA88 /* S3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19BAD241D471A840038EA88 /* S3.swift */; };
 		E19BAD271D471C730038EA88 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19BAD261D471C730038EA88 /* Async.swift */; };
-		E19BAD291D471CC90038EA88 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19BAD281D471CC90038EA88 /* Helper.swift */; };
+		E19BAD291D471CC90038EA88 /* S3Uploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19BAD281D471CC90038EA88 /* S3Uploader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		E19BAD1E1D46FB540038EA88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E19BAD241D471A840038EA88 /* S3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = S3.swift; sourceTree = "<group>"; };
 		E19BAD261D471C730038EA88 /* Async.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
-		E19BAD281D471CC90038EA88 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		E19BAD281D471CC90038EA88 /* S3Uploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = S3Uploader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 				E19BAD1B1D46FB540038EA88 /* LaunchScreen.storyboard */,
 				E19BAD1E1D46FB540038EA88 /* Info.plist */,
 				E19BAD261D471C730038EA88 /* Async.swift */,
-				E19BAD281D471CC90038EA88 /* Helper.swift */,
+				E19BAD281D471CC90038EA88 /* S3Uploader.swift */,
 			);
 			path = AmazonS3Upload;
 			sourceTree = "<group>";
@@ -221,7 +221,7 @@
 			files = (
 				E19BAD271D471C730038EA88 /* Async.swift in Sources */,
 				E19BAD151D46FB540038EA88 /* ViewController.swift in Sources */,
-				E19BAD291D471CC90038EA88 /* Helper.swift in Sources */,
+				E19BAD291D471CC90038EA88 /* S3Uploader.swift in Sources */,
 				E19BAD131D46FB540038EA88 /* AppDelegate.swift in Sources */,
 				E19BAD251D471A840038EA88 /* S3.swift in Sources */,
 			);
