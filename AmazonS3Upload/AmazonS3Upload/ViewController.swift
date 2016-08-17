@@ -8,16 +8,25 @@
 
 import UIKit
 
-extension ViewController: ImageUploaderDelegate {
-    func imageUploaderDidChangeProgress(bytesWritten: Double, totalExpectedBytes: Double) {
+extension ViewController{
+
+    func didChangeProgressValue(note: NSNotification){
         self.progressLabel.hidden = false
         self.progressView.hidden = false
         
+        if let userInfo = note.userInfo,
+        bytesWritten = userInfo[PostProgress.bytesWritten],
+        totalExpectedBytes = userInfo[PostProgress.totalExpectedBytes] {
+
+            let ratio:Double = Double(bytesWritten as! NSNumber) / Double(totalExpectedBytes as! NSNumber)
+            let percent:Int = Int(ratio * 100)
+            self.progressLabel.text = "\(percent)%"
+            self.progressView.progress = Float(ratio)
+        }
         
-        let ratio:Double = bytesWritten / totalExpectedBytes
-        let percent:Int = Int(ratio * 100)
-        self.progressLabel.text = "\(percent)%"
-        self.progressView.progress = Float(ratio)
+    }
+    func didProgressFail(note:NSNotification){
+        
     }
     
 }
@@ -47,9 +56,9 @@ extension ViewController {
         }
         
         
-        imageUploader.uploadImage(image) { (succeed, URLString) in
-            print(succeed)
-            print(URLString)
+        
+        ImageUploader.sharedInstance.uploadImage(image) { (succeed, URLString) in
+            //TODO: goto somewhere after imaged posted
         }
     }
 
@@ -69,6 +78,9 @@ extension ViewController {
         
         imagePicker.delegate = self
         
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(didChangeProgressValue(_:)), name: kNotificationPostProgress, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(didProgressFail(_:)), name: kNotificationPostFailed, object: nil)
     }
 }
 
@@ -87,12 +99,6 @@ class ViewController: UIViewController {
             imageView.image = selectedImage
         }
     }
-    
-    lazy var imageUploader: ImageUploader  = {
-        let uploader = ImageUploader()
-        uploader.delegate = self
-        return uploader
-    }()
     
     @IBOutlet weak var progressLabel: UILabel!
     
