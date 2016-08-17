@@ -33,14 +33,12 @@ class ImageUploader: NSObject {
     
     weak var delegate: ImageUploaderDelegate?
     
-    func uploadData(data: NSData, toSignedUrl signedUrlString: URLStringConvertible, handler: UploadActionn? = nil){
+    private func uploadData(data: NSData, toSignedUrl signedUrlString: URLStringConvertible, handler: UploadActionn? = nil){
         let fileURL = writeDataToFile(data)
         
         //Content-Type:image/png
-        //Content-Type:image/png
-        Alamofire.request
-        
-        Alamofire.upload(.POST, signedUrlString, headers: ["Content-Type":"image/png"], file: fileURL)
+        //Content-Type:image/png   headers: ["Content-Type":"image/png"]
+        Alamofire.upload(.PUT, signedUrlString, headers: ["Content-Type":"image/png"], file: fileURL)
             .progress { bytesWritten, totalBytesWritten, totalBytesExpectedToWrite in
                 //print(totalBytesWritten)
                 let percent:Double = (Double(totalBytesWritten) / Double(totalBytesExpectedToWrite)) * 100
@@ -57,8 +55,10 @@ class ImageUploader: NSObject {
                 }
             }
             .validate()
-            .responseJSON { response in
-                debugPrint(response)
+            .responseData { (response) in
+                if response.result.error != nil {
+                    
+                }
         }
         
         
@@ -114,7 +114,7 @@ class ImageUploader: NSObject {
          */
     }
     
-    func uploadData(data: NSData, toBucket: String, key: String, handler: UploadActionn? = nil){
+    private func uploadData(data: NSData, toBucket: String, key: String, handler: UploadActionn? = nil){
         //TODO: bucket method is pending
     }
     
