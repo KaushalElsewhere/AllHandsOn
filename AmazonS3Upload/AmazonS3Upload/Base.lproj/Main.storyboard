@@ -24,6 +24,15 @@
                                     <constraint firstAttribute="width" constant="200" id="Tyq-M7-f6b"/>
                                 </constraints>
                             </imageView>
+                            <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ASF-rC-gbD">
+                                <rect key="frame" x="50" y="506" width="500" height="2"/>
+                            </progressView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKx-dc-3EA">
+                                <rect key="frame" x="288.5" y="451" width="23.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNi-dw-wZh">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Click to upload"/>
@@ -37,8 +46,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="QKx-dc-3EA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9tw-GJ-bcm"/>
+                            <constraint firstAttribute="trailing" secondItem="ASF-rC-gbD" secondAttribute="trailing" constant="50" id="LjQ-bF-MYd"/>
+                            <constraint firstItem="ASF-rC-gbD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="PiZ-oL-4M1"/>
                             <constraint firstItem="EYx-XG-S80" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="SD3-Jk-HNJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ASF-rC-gbD" secondAttribute="bottom" constant="92" id="glE-hN-pLu"/>
                             <constraint firstItem="EYx-XG-S80" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kUw-Ro-XQ3"/>
+                            <constraint firstItem="ASF-rC-gbD" firstAttribute="top" secondItem="QKx-dc-3EA" secondAttribute="bottom" constant="34" id="uL3-Xs-bqS"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -53,11 +67,13 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="EYx-XG-S80" id="wtK-tm-Fpw"/>
+                        <outlet property="progressLabel" destination="QKx-dc-3EA" id="X9j-4f-Opg"/>
+                        <outlet property="progressView" destination="ASF-rC-gbD" id="4ro-9T-SEK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="439.5" y="429"/>
+            <point key="canvasLocation" x="439" y="429"/>
         </scene>
     </scenes>
     <resources>

@@ -7,6 +7,21 @@
 //
 
 import UIKit
+
+extension ViewController: ImageUploaderDelegate {
+    func imageUploaderDidChangeProgress(bytesWritten: Double, totalExpectedBytes: Double) {
+        self.progressLabel.hidden = false
+        self.progressView.hidden = false
+        
+        
+        let ratio:Double = bytesWritten / totalExpectedBytes
+        let percent:Int = Int(ratio * 100)
+        self.progressLabel.text = "\(percent)%"
+        self.progressView.progress = Float(ratio)
+    }
+    
+}
+
 extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
         selectedImage = image
@@ -32,7 +47,7 @@ extension ViewController {
         }
         
         
-        S3Uploader.uploadImage(image) { (succeed, URLString) in
+        imageUploader.uploadImage(image) { (succeed, URLString) in
             print(succeed)
             print(URLString)
         }
@@ -72,5 +87,16 @@ class ViewController: UIViewController {
             imageView.image = selectedImage
         }
     }
+    
+    lazy var imageUploader: ImageUploader  = {
+        let uploader = ImageUploader()
+        uploader.delegate = self
+        return uploader
+    }()
+    
+    @IBOutlet weak var progressLabel: UILabel!
+    
+    @IBOutlet weak var progressView: UIProgressView!
+    
 }
 

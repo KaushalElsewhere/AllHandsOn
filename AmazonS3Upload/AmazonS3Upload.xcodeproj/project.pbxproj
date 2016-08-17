@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		387D27B7C74CD7336558B2F6 /* Pods_AmazonS3Upload.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCFD42AB471F425DF4F3A02 /* Pods_AmazonS3Upload.framework */; };
+		E11C00F01D63EA8E00F2B16B /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11C00EF1D63EA8E00F2B16B /* ImageUploader.swift */; };
 		E19BAD131D46FB540038EA88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19BAD121D46FB540038EA88 /* AppDelegate.swift */; };
 		E19BAD151D46FB540038EA88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19BAD141D46FB540038EA88 /* ViewController.swift */; };
 		E19BAD181D46FB540038EA88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19BAD161D46FB540038EA88 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		C519D04A6B22C27F86A2C828 /* Pods-AmazonS3Upload.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazonS3Upload.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AmazonS3Upload/Pods-AmazonS3Upload.debug.xcconfig"; sourceTree = "<group>"; };
 		C539B54B75CB436D09D3FE38 /* Pods-AmazonS3Upload.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazonS3Upload.release.xcconfig"; path = "Pods/Target Support Files/Pods-AmazonS3Upload/Pods-AmazonS3Upload.release.xcconfig"; sourceTree = "<group>"; };
 		DBCFD42AB471F425DF4F3A02 /* Pods_AmazonS3Upload.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmazonS3Upload.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E11C00EF1D63EA8E00F2B16B /* ImageUploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		E19BAD0F1D46FB540038EA88 /* AmazonS3Upload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazonS3Upload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E19BAD121D46FB540038EA88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E19BAD141D46FB540038EA88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				E19BAD1E1D46FB540038EA88 /* Info.plist */,
 				E19BAD261D471C730038EA88 /* Async.swift */,
 				E19BAD281D471CC90038EA88 /* S3Uploader.swift */,
+				E11C00EF1D63EA8E00F2B16B /* ImageUploader.swift */,
 			);
 			path = AmazonS3Upload;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				E19BAD291D471CC90038EA88 /* S3Uploader.swift in Sources */,
 				E19BAD131D46FB540038EA88 /* AppDelegate.swift in Sources */,
 				E19BAD251D471A840038EA88 /* S3.swift in Sources */,
+				E11C00F01D63EA8E00F2B16B /* ImageUploader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +344,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AmazonS3Upload/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elsewhere.AmazonS3Upload;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AmazonS3Upload/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elsewhere.AmazonS3Upload;
 				PRODUCT_NAME = "$(TARGET_NAME)";
