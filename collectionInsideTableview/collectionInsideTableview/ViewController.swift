@@ -10,12 +10,12 @@ import UIKit
 import SnapKit
 
 extension ViewController: UITableViewDelegate {
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
-    }
-    func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 100
-    }
+//    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+//        return UITableViewAutomaticDimension
+//    }
+//    func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+//        return 100
+//    }
 }
 
 extension ViewController: UITableViewDataSource {
@@ -34,7 +34,7 @@ extension ViewController: UITableViewDataSource {
     
     private func createCollectionCell(tableView: UITableView, forIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(CustomTableCell.reuseid) as! CustomTableCell
-        //cell.updateConstraintsIfNeeded()
+        cell.bindWithModel()
         return cell
     }
 }
@@ -71,8 +71,8 @@ class ViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        //tableView.estimatedRowHeight = 100
-        //tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 50
+        tableView.rowHeight = UITableViewAutomaticDimension
         
         tableView.backgroundColor = UIColor.lightGrayColor()
         tableView.tableFooterView = UIView()

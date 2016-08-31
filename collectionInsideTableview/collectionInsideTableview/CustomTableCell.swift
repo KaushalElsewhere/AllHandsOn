@@ -55,6 +55,14 @@ class CustomTableCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func systemLayoutSizeFittingSize(targetSize: CGSize, withHorizontalFittingPriority horizontalFittingPriority: UILayoutPriority, verticalFittingPriority: UILayoutPriority) -> CGSize {
+        
+        self.collectionView.frame = CGRect()//CGRect(x: 0.0, y: 0.0, width: targetSize.width, height: MAXFLOAT)
+        //setupConstraints()
+        
+        return self.collectionView.collectionViewLayout.collectionViewContentSize()
+    }
+    
     func setupConstraints() {
         let superView = contentView
         
@@ -63,8 +71,11 @@ class CustomTableCell: UITableViewCell {
             make.top.equalTo(superView).offset(10)
             make.right.equalTo(superView).offset(-10)
             make.bottom.equalTo(superView).offset(-10)
-            make.height.equalTo(500)
+            //make.height.equalTo(collectionView.intrinsicContentSize())
         }
     }
-
+    
+    func bindWithModel(){
+        self.collectionView.layoutIfNeeded()
+    }
 }
