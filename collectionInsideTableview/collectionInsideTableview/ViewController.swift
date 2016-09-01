@@ -52,6 +52,13 @@ class ViewController: UIViewController {
         
         setupConstraints()
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+        
+        tableView.layoutIfNeeded()
+    }
+    
     func setupConstraints() {
         
         let superView = view

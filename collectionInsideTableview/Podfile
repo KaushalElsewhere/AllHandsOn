@@ -3,8 +3,8 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'collectionInsideTableview' do
-  
-pod 'SnapKit'
-pod 'SDWebImage', '~>3.7'
+    
+  pod 'SnapKit', '0.18.0'
+  pod 'SDWebImage', '~>3.7'
 
 end
