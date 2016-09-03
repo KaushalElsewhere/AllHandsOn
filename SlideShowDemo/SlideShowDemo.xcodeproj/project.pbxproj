@@ -95,12 +95,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E135DEDE1D7938860041D92B /* Build configuration list for PBXNativeTarget "SlideShowDemo" */;
 			buildPhases = (
+				46AF3FD7799B52B6ED2463F7 /* 📦 Check Pods Manifest.lock */,
 				D7C1BFC381A84EDA3AC9FF2D /* [CP] Check Pods Manifest.lock */,
 				E135DEC81D7938860041D92B /* Sources */,
 				E135DEC91D7938860041D92B /* Frameworks */,
 				E135DECA1D7938860041D92B /* Resources */,
 				D572603BD56299576C691B50 /* [CP] Embed Pods Frameworks */,
 				DB8F39BF1A52B45ED1AD1415 /* [CP] Copy Pods Resources */,
+				AE3AE284F734285C5B1DE0AA /* 📦 Embed Pods Frameworks */,
+				D98D9D6D6FBCB16EDDF3030C /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -158,6 +161,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		46AF3FD7799B52B6ED2463F7 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AE3AE284F734285C5B1DE0AA /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlideShowDemo/Pods-SlideShowDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D572603BD56299576C691B50 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -186,6 +219,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D98D9D6D6FBCB16EDDF3030C /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlideShowDemo/Pods-SlideShowDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DB8F39BF1A52B45ED1AD1415 /* [CP] Copy Pods Resources */ = {
@@ -328,6 +376,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SlideShowDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elsewhere.SlideShowDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -340,6 +389,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SlideShowDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elsewhere.SlideShowDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
