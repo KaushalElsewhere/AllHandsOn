@@ -91,7 +91,6 @@ extension NextViewController: UITableViewDelegate, UIScrollViewDelegate {
         tableView.layoutIfNeeded()
         
         pager.setCurrentPage(lastPageIndex, animated: false)
-        print(lastPageIndex)
     }
     
 }
