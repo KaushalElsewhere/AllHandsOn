@@ -4,5 +4,6 @@ use_frameworks!
 target 'SlideShowDemo' do
   pod 'KASlideShow'
   pod 'SnapKit'
+  pod 'KIImagePager'
 
 end

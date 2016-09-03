@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6C6E325BFF566B2B9B906929 /* Pods_SlideShowDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2690C374FCE5E46B91B654F /* Pods_SlideShowDemo.framework */; };
+		CDB5A3C71D7AF56C002088E8 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5A3C61D7AF56C002088E8 /* NextViewController.swift */; };
 		E135DED01D7938860041D92B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E135DECF1D7938860041D92B /* AppDelegate.swift */; };
 		E135DED21D7938860041D92B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E135DED11D7938860041D92B /* ViewController.swift */; };
 		E135DED51D7938860041D92B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E135DED31D7938860041D92B /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 		869CD78D93F29746576C5C6D /* Pods-SlideShowDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideShowDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlideShowDemo/Pods-SlideShowDemo.release.xcconfig"; sourceTree = "<group>"; };
 		A31E2A01CB739E3146B34720 /* Pods-SlideShowDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideShowDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlideShowDemo/Pods-SlideShowDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B2690C374FCE5E46B91B654F /* Pods_SlideShowDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlideShowDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDB5A3C61D7AF56C002088E8 /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		E135DECC1D7938860041D92B /* SlideShowDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideShowDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E135DECF1D7938860041D92B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E135DED11D7938860041D92B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			children = (
 				E135DECF1D7938860041D92B /* AppDelegate.swift */,
 				E135DED11D7938860041D92B /* ViewController.swift */,
+				CDB5A3C61D7AF56C002088E8 /* NextViewController.swift */,
 				E135DED31D7938860041D92B /* Main.storyboard */,
 				E135DED61D7938860041D92B /* Assets.xcassets */,
 				E135DED81D7938860041D92B /* LaunchScreen.storyboard */,
@@ -95,7 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E135DEDE1D7938860041D92B /* Build configuration list for PBXNativeTarget "SlideShowDemo" */;
 			buildPhases = (
-				46AF3FD7799B52B6ED2463F7 /* 📦 Check Pods Manifest.lock */,
+				46AF3FD7799B52B6ED2463F7 /* [CP] Check Pods Manifest.lock */,
 				D7C1BFC381A84EDA3AC9FF2D /* [CP] Check Pods Manifest.lock */,
 				E135DEC81D7938860041D92B /* Sources */,
 				E135DEC91D7938860041D92B /* Frameworks */,
@@ -161,19 +164,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		46AF3FD7799B52B6ED2463F7 /* 📦 Check Pods Manifest.lock */ = {
+		46AF3FD7799B52B6ED2463F7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		AE3AE284F734285C5B1DE0AA /* 📦 Embed Pods Frameworks */ = {
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E135DED21D7938860041D92B /* ViewController.swift in Sources */,
+				CDB5A3C71D7AF56C002088E8 /* NextViewController.swift in Sources */,
 				E135DED01D7938860041D92B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

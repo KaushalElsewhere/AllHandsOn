@@ -41,8 +41,17 @@ extension ViewController: KASlideShowDataSource {
     func slideShow(slideShow: KASlideShow!, objectAtIndex index: UInt) -> NSObject! {
         return NSURL(string: images[Int(index)])!
     }
+    
     func slideShowImagesNumber(slideShow: KASlideShow!) -> UInt {
         return UInt(images.count)
+    }
+}
+
+extension ViewController: KASlideShowDelegate {
+    func slideShowWillShowNext(slideShow: KASlideShow!) {
+        if Int(slideShow.currentIndex) == (images.count - 1){
+            
+        }
     }
 }
 
@@ -51,17 +60,15 @@ extension ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //slideShow.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.width)
         tableView.addSubview(slideShow)
         view.addSubview(tableView)
+        
         setupConstraint()
-        //kTableHeaderHieght = self.view.frame.size.width
+        
+        kTableHeaderHieght = self.view.frame.size.width
         
         tableView.delegate = self
         tableView.dataSource = self
-        
-        
-        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -69,7 +76,7 @@ extension ViewController {
         
         setupSlider()
         
-        //self.view.layoutIfNeeded()
+        self.tableView.layoutIfNeeded()
     }
     
     func setupSlider() {
@@ -77,21 +84,18 @@ extension ViewController {
         tableView.contentOffset = CGPoint(x: 0, y: -(kTableHeaderHieght))
     
         updateHeaderView()
-        
     }
     
     func setupConstraint() {
         let superView = view
-        tableView.frame = view.frame
-//        tableView.snp_makeConstraints { (make) in
-//            make.top.equalTo(superView)//.offset(69)
-//            make.left.equalTo(superView)
-//            make.right.equalTo(superView)
-//            make.bottom.equalTo(superView)
-//            
-//        }
-        
-        
+        //tableView.frame = view.frame
+        tableView.snp_makeConstraints { (make) in
+            make.top.equalTo(superView).offset(49)
+            make.left.equalTo(superView)
+            make.right.equalTo(superView)
+            make.bottom.equalTo(superView)
+            
+        }
     }
 }
 
@@ -103,11 +107,7 @@ class ViewController: UIViewController {
     
     var kTableHeaderHieght: CGFloat = 300
     
-    let images = [
-        "http://img.auctiva.com/imgdata/1/9/9/4/9/2/5/webimg/912245529_o.jpg",
-        "http://img.auctiva.com/imgdata/1/9/9/4/9/2/5/webimg/912245493_o.jpg",
-        "http://img.auctiva.com/imgdata/1/9/9/4/9/2/5/webimg/912245540_o.jpg",
-    ]
+    
     
     lazy var tableView: UITableView = {
         let tableView = UITableView()
@@ -126,4 +126,10 @@ class ViewController: UIViewController {
     }()
 
 }
+
+public let images = [
+    "http://img.auctiva.com/imgdata/1/9/9/4/9/2/5/webimg/912245529_o.jpg",
+    "http://img.auctiva.com/imgdata/1/9/9/4/9/2/5/webimg/912245493_o.jpg",
+    "http://img.auctiva.com/imgdata/1/9/9/4/9/2/5/webimg/912245540_o.jpg",
+]
 
