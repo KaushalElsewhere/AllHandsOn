@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  SlideShowDemo
+//  PinterestImageDemo
 //
-//  Created by Kaushal Elsewhere on 2/09/2016.
+//  Created by Kaushal Elsewhere on 19/10/2016.
 //  Copyright © 2016 Kaushal Elsewhere. All rights reserved.
 //
 
