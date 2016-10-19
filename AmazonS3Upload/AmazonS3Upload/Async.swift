@@ -10,6 +10,6 @@ import Foundation
 
 typealias Action = () -> ()
 
-func run(onQueue queue: dispatch_queue_t = dispatch_get_main_queue(), block: Action) {
-    dispatch_async(queue, block)
+func run(onQueue queue: DispatchQueue = DispatchQueue.main, block: @escaping Action) {
+    queue.async(execute: block)
 }

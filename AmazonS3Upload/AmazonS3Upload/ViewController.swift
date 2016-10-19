@@ -10,13 +10,13 @@ import UIKit
 
 extension ViewController{
 
-    func didChangeProgressValue(note: NSNotification){
-        self.progressLabel.hidden = false
-        self.progressView.hidden = false
+    func didChangeProgressValue(_ note: Notification){
+        self.progressLabel.isHidden = false
+        self.progressView.isHidden = false
         
-        if let userInfo = note.userInfo,
-        bytesWritten = userInfo[PostProgress.bytesWritten],
-        totalExpectedBytes = userInfo[PostProgress.totalExpectedBytes] {
+        if let userInfo = (note as NSNotification).userInfo,
+        let bytesWritten = userInfo[PostProgress.bytesWritten],
+        let totalExpectedBytes = userInfo[PostProgress.totalExpectedBytes] {
 
             let ratio:Double = Double(bytesWritten as! NSNumber) / Double(totalExpectedBytes as! NSNumber)
             let percent:Int = Int(ratio * 100)
@@ -25,31 +25,31 @@ extension ViewController{
         }
         
     }
-    func didProgressFail(note:NSNotification){
+    func didProgressFail(_ note:Notification){
         
     }
     
 }
 
 extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
         selectedImage = image
         
-        dismissViewControllerAnimated(true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     
-    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
-        dismissViewControllerAnimated(true, completion: nil)
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
     }
     
 }
 
 extension ViewController {
     func didTapOnImageView() {
-        self.presentViewController(imagePicker, animated: true, completion: nil)
+        self.present(imagePicker, animated: true, completion: nil)
     }
     
-    @IBAction func didSelectUpload(sender: AnyObject) {
+    @IBAction func didSelectUpload(_ sender: AnyObject) {
     
         guard let image = selectedImage else{
             return
@@ -79,8 +79,8 @@ extension ViewController {
         imagePicker.delegate = self
         
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(didChangeProgressValue(_:)), name: kNotificationPostProgress, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(didProgressFail(_:)), name: kNotificationPostFailed, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(didChangeProgressValue(_:)), name: NSNotification.Name(rawValue: kNotificationPostProgress), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(didProgressFail(_:)), name: NSNotification.Name(rawValue: kNotificationPostFailed), object: nil)
     }
 }
 
@@ -90,7 +90,7 @@ class ViewController: UIViewController {
     
     lazy var imagePicker: UIImagePickerController = {
         let controller = UIImagePickerController()
-        controller.sourceType = .PhotoLibrary
+        controller.sourceType = .photoLibrary
         return controller
     }()
     

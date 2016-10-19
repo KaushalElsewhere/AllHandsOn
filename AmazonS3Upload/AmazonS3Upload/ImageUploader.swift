@@ -16,10 +16,10 @@ public struct PostProgress{
     public static let totalExpectedBytes =  "totalExpectedBytes"
 }
 
-typealias UploadActionn = (succeed: Bool, URLString: String) -> Void
+typealias UploadActionn = (_ succeed: Bool, _ URLString: String) -> Void
 
 extension ImageUploader {
-    func uploadImage(image: UIImage, handler: UploadActionn? = nil) {
+    func uploadImage(_ image: UIImage, handler: UploadActionn? = nil) {
         let data = UIImagePNGRepresentation(image)
        
         uploadData(data!, toSignedUrl: signedUrlString, handler: handler)
@@ -31,7 +31,7 @@ public let kNotificationPostFailed = "NotificationPostFailed"
 class ImageUploader: NSObject {
     static let sharedInstance = ImageUploader()
 
-    private func uploadData(data: NSData, toSignedUrl signedUrlString: URLStringConvertible, handler: UploadActionn? = nil){
+    fileprivate func uploadData(_ data: Data, toSignedUrl signedUrlString: URLStringConvertible, handler: UploadActionn? = nil){
         let fileURL = writeDataToFile(data)
         
         Alamofire.upload(.PUT, signedUrlString, headers: ["Content-Type":"image/png"], file: fileURL)
@@ -55,16 +55,16 @@ class ImageUploader: NSObject {
         }
     }
     
-    private func uniqueString() -> String {
-        return NSProcessInfo.processInfo().globallyUniqueString
+    fileprivate func uniqueString() -> String {
+        return ProcessInfo.processInfo.globallyUniqueString
     }
     
-    private func writeDataToFile(data: NSData) -> NSURL{
+    fileprivate func writeDataToFile(_ data: Data) -> URL{
         let filename = uniqueString()
-        let filePath = (NSTemporaryDirectory() as NSString).stringByAppendingPathComponent(filename)
-        let URL = NSURL(fileURLWithPath: filePath)
+        let filePath = (NSTemporaryDirectory() as NSString).appendingPathComponent(filename)
+        let URL = Foundation.URL(fileURLWithPath: filePath)
         
-        data.writeToURL(URL, atomically: true)
+        try? data.write(to: URL, options: [.atomic])
         
         return URL
     }

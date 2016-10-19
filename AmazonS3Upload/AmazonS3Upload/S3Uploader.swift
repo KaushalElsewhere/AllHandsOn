@@ -9,14 +9,14 @@
 import Foundation
 import AWSS3
 
-typealias UploadAction = (succeed: Bool, URLString: String) -> Void
+typealias UploadAction = (_ succeed: Bool, _ URLString: String) -> Void
 
 extension S3Uploader {
-    static func uploadImage(image: UIImage, handler: UploadAction? = nil) {
+    static func uploadImage(_ image: UIImage, handler: UploadAction? = nil) {
         let data = UIImagePNGRepresentation(image)
         //let filename = (uniqueString() as NSString).stringByAppendingPathExtension("png")!
         
-        let signedUrl = NSURL(string: "https://totsamour-upload-test.s3.amazonaws.com/?Signature=o2du%2ByD%2FcvXmBJJ5gQd9ghU%2Baj0%3D&Expires=1470111962&AWSAccessKeyId=AKIAIDWRCH3X6CPHSJ7Q")!
+        let signedUrl = URL(string: "https://totsamour-upload-test.s3.amazonaws.com/?Signature=o2du%2ByD%2FcvXmBJJ5gQd9ghU%2Baj0%3D&Expires=1470111962&AWSAccessKeyId=AKIAIDWRCH3X6CPHSJ7Q")!
         
         uploadData(data!, toSignedUrl: signedUrl, handler: handler)
     }
@@ -24,26 +24,26 @@ extension S3Uploader {
 
 
 struct S3Uploader {
-    static func uploadData(data: NSData, toSignedUrl signedUrl: NSURL, handler: UploadAction? = nil){
+    static func uploadData(_ data: Data, toSignedUrl signedUrl: URL, handler: UploadAction? = nil){
         let fileURL = writeDataToFile(data)
         
         
     
-        let request = NSMutableURLRequest(URL: signedUrl)
-        request.cachePolicy = .ReloadIgnoringLocalCacheData
-        request.HTTPMethod = "PUT"
+        let request = NSMutableURLRequest(url: signedUrl)
+        request.cachePolicy = .reloadIgnoringLocalCacheData
+        request.httpMethod = "PUT"
         request.setValue("text/plain", forHTTPHeaderField: "Content-Type")
         
-        let session = NSURLSession.sharedSession()
-        let uploadTask: NSURLSessionUploadTask = session.uploadTaskWithRequest(request, fromFile: fileURL) { (data, response, error) in
+        let session = URLSession.shared
+        let uploadTask: URLSessionUploadTask = session.uploadTask(with: request as URLRequest, fromFile: fileURL, completionHandler: { (data, response, error) in
             if error != nil {
-                handler?(succeed: false, URLString: "nothing")
+                handler?(false, "nothing")
                 
                 return
             }
             
             print(response)
-        }
+        }) 
         uploadTask.resume()
         
         
@@ -74,20 +74,20 @@ struct S3Uploader {
 //        [uploadTask resume];
     }
     
-    static func uploadData(data: NSData, toBucket: String, key: String, handler: UploadAction? = nil){
+    static func uploadData(_ data: Data, toBucket: String, key: String, handler: UploadAction? = nil){
         //TODO: bucket method is pending
     }
     
-    private static func uniqueString() -> String {
-        return NSProcessInfo.processInfo().globallyUniqueString
+    fileprivate static func uniqueString() -> String {
+        return ProcessInfo.processInfo.globallyUniqueString
     }
     
-    private static func writeDataToFile(data: NSData) -> NSURL{
+    fileprivate static func writeDataToFile(_ data: Data) -> URL{
         let filename = uniqueString()
-        let filePath = (NSTemporaryDirectory() as NSString).stringByAppendingPathComponent(filename)
-        let URL = NSURL(fileURLWithPath: filePath)
+        let filePath = (NSTemporaryDirectory() as NSString).appendingPathComponent(filename)
+        let URL = Foundation.URL(fileURLWithPath: filePath)
         
-        data.writeToURL(URL, atomically: true)
+        try? data.write(to: URL, options: [.atomic])
         
         return URL
     }
