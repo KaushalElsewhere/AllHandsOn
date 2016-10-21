@@ -1,0 +1,379 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E1114D351DB9A669006C9FCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1114D341DB9A669006C9FCA /* AppDelegate.swift */; };
+		E1114D371DB9A669006C9FCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1114D361DB9A669006C9FCA /* ViewController.swift */; };
+		E1114D3A1DB9A669006C9FCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1114D381DB9A669006C9FCA /* Main.storyboard */; };
+		E1114D3C1DB9A669006C9FCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1114D3B1DB9A669006C9FCA /* Assets.xcassets */; };
+		E1114D3F1DB9A669006C9FCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1114D3D1DB9A669006C9FCA /* LaunchScreen.storyboard */; };
+		E1114D471DB9A8D8006C9FCA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1114D461DB9A8D8006C9FCA /* DetailViewController.swift */; };
+		FA79166762E3A707DCA1FD57 /* Pods_ScrollingNavDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F3CFC1150ADA71D6417C60 /* Pods_ScrollingNavDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03F3CFC1150ADA71D6417C60 /* Pods_ScrollingNavDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollingNavDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E11B27A49BEA33E6D7A563B /* Pods-ScrollingNavDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollingNavDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollingNavDemo/Pods-ScrollingNavDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9946A840BF370E6D082E5E83 /* Pods-ScrollingNavDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollingNavDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollingNavDemo/Pods-ScrollingNavDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E1114D311DB9A669006C9FCA /* ScrollingNavDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollingNavDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1114D341DB9A669006C9FCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E1114D361DB9A669006C9FCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E1114D391DB9A669006C9FCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E1114D3B1DB9A669006C9FCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1114D3E1DB9A669006C9FCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E1114D401DB9A669006C9FCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1114D461DB9A8D8006C9FCA /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1114D2E1DB9A669006C9FCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA79166762E3A707DCA1FD57 /* Pods_ScrollingNavDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DC7D06266C8ABCA9EF11117 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E11B27A49BEA33E6D7A563B /* Pods-ScrollingNavDemo.debug.xcconfig */,
+				9946A840BF370E6D082E5E83 /* Pods-ScrollingNavDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		94186E746CC22D56A44FA819 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03F3CFC1150ADA71D6417C60 /* Pods_ScrollingNavDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1114D281DB9A669006C9FCA = {
+			isa = PBXGroup;
+			children = (
+				E1114D331DB9A669006C9FCA /* ScrollingNavDemo */,
+				E1114D321DB9A669006C9FCA /* Products */,
+				6DC7D06266C8ABCA9EF11117 /* Pods */,
+				94186E746CC22D56A44FA819 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E1114D321DB9A669006C9FCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1114D311DB9A669006C9FCA /* ScrollingNavDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1114D331DB9A669006C9FCA /* ScrollingNavDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E1114D341DB9A669006C9FCA /* AppDelegate.swift */,
+				E1114D361DB9A669006C9FCA /* ViewController.swift */,
+				E1114D461DB9A8D8006C9FCA /* DetailViewController.swift */,
+				E1114D381DB9A669006C9FCA /* Main.storyboard */,
+				E1114D3B1DB9A669006C9FCA /* Assets.xcassets */,
+				E1114D3D1DB9A669006C9FCA /* LaunchScreen.storyboard */,
+				E1114D401DB9A669006C9FCA /* Info.plist */,
+			);
+			path = ScrollingNavDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1114D301DB9A669006C9FCA /* ScrollingNavDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1114D431DB9A669006C9FCA /* Build configuration list for PBXNativeTarget "ScrollingNavDemo" */;
+			buildPhases = (
+				5EAE46CE9A6639A457E646F0 /* [CP] Check Pods Manifest.lock */,
+				E1114D2D1DB9A669006C9FCA /* Sources */,
+				E1114D2E1DB9A669006C9FCA /* Frameworks */,
+				E1114D2F1DB9A669006C9FCA /* Resources */,
+				2DA0ECF50D8BA08DFEB2ABAA /* [CP] Embed Pods Frameworks */,
+				6F47A678C281D73632A00A16 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScrollingNavDemo;
+			productName = ScrollingNavDemo;
+			productReference = E1114D311DB9A669006C9FCA /* ScrollingNavDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1114D291DB9A669006C9FCA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Kaushal Elsewhere";
+				TargetAttributes = {
+					E1114D301DB9A669006C9FCA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = E1114D2C1DB9A669006C9FCA /* Build configuration list for PBXProject "ScrollingNavDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1114D281DB9A669006C9FCA;
+			productRefGroup = E1114D321DB9A669006C9FCA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1114D301DB9A669006C9FCA /* ScrollingNavDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1114D2F1DB9A669006C9FCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1114D3F1DB9A669006C9FCA /* LaunchScreen.storyboard in Resources */,
+				E1114D3C1DB9A669006C9FCA /* Assets.xcassets in Resources */,
+				E1114D3A1DB9A669006C9FCA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DA0ECF50D8BA08DFEB2ABAA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollingNavDemo/Pods-ScrollingNavDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EAE46CE9A6639A457E646F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6F47A678C281D73632A00A16 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollingNavDemo/Pods-ScrollingNavDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1114D2D1DB9A669006C9FCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1114D471DB9A8D8006C9FCA /* DetailViewController.swift in Sources */,
+				E1114D371DB9A669006C9FCA /* ViewController.swift in Sources */,
+				E1114D351DB9A669006C9FCA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E1114D381DB9A669006C9FCA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1114D391DB9A669006C9FCA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E1114D3D1DB9A669006C9FCA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1114D3E1DB9A669006C9FCA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1114D411DB9A669006C9FCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1114D421DB9A669006C9FCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1114D441DB9A669006C9FCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E11B27A49BEA33E6D7A563B /* Pods-ScrollingNavDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ScrollingNavDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elsewhere.ScrollingNavDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E1114D451DB9A669006C9FCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9946A840BF370E6D082E5E83 /* Pods-ScrollingNavDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ScrollingNavDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elsewhere.ScrollingNavDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1114D2C1DB9A669006C9FCA /* Build configuration list for PBXProject "ScrollingNavDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1114D411DB9A669006C9FCA /* Debug */,
+				E1114D421DB9A669006C9FCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1114D431DB9A669006C9FCA /* Build configuration list for PBXNativeTarget "ScrollingNavDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1114D441DB9A669006C9FCA /* Debug */,
+				E1114D451DB9A669006C9FCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1114D291DB9A669006C9FCA /* Project object */;
+}
