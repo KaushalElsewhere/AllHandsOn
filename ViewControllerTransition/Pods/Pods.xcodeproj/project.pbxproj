@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		104EC4CFF0E86AB671FF45C8C8F3B1E8 /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E046FF362B36009BB112EF88895521F /* ViewController+SnapKit.swift */; };
+		1C940327291D8F8EE51AEE2AA3AA9B1F /* Pods-ViewControllerTransition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09A2978396802F8FE821D321628C8411 /* Pods-ViewControllerTransition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E39E2782FE5049EC2AD36DCF9CE49E6 /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7E5D0D3BC7C3C61C0B4717D821D5C7 /* View+SnapKit.swift */; };
+		268A01D426C8F52C222A06055FE2A9E1 /* ZOZolaZoomTransition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9601923EA34F6F78C445CBB05695D03 /* ZOZolaZoomTransition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CEB56D969AFE0F68EF56476DEA75DDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		4AC11FD423645BEB0B85007A55335AEC /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12092AE3CDD5EC5242814373601CBF44 /* EdgeInsets.swift */; };
+		4F5D73739969C0FCBDA69BE911240A6D /* ZOZolaZoomTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = F9137C4FE6554DD504D7E5D184BD70E0 /* ZOZolaZoomTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5BB4461DF1AEA7030E846EE3805949AF /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4131B56F3C29FF46B1A37323C14EEB9B /* LayoutConstraint.swift */; };
+		63D935144DB947E77252919B66E335CD /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8859DF101FD64B65DDE946968B3D1E5F /* SnapKit.swift */; };
+		6D79D0AC9E09954638009794E0298DB5 /* ZOZolaZoomTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3E56F7BC9D58467C38C015B9061066 /* ZOZolaZoomTransition.m */; };
+		7BEFE8A820FD00DF378D2A342AF07C9A /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CE02B9A7BDA28B6A2593082587C66E /* SnapKit-dummy.m */; };
+		8EA1B3D37EF75A9F5BE1184BE4C8DB04 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E05076FC2C09F549D853C5C89B0DA0 /* Constraint.swift */; };
+		96B92D43A97BA92C4A26C7CCD33C7295 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D1FF72C33E9F0CB83C559BFA3B7235 /* ConstraintItem.swift */; };
+		9FE8800D5812113B1FC580788B4F892D /* Pods-ViewControllerTransition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C80A01AACB3E09F1E06C0EA5E89B05 /* Pods-ViewControllerTransition-dummy.m */; };
+		A73D273BE77E56FECF8058731A01DBD2 /* ZOZolaZoomTransition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA675537BF4781AFC8C02EFC57CE6AAF /* ZOZolaZoomTransition-dummy.m */; };
+		AB7E469FDE56ED109ECC351EA293AFDF /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089E2F12B33CB044DAA93FE0B5937C99 /* ConstraintRelation.swift */; };
+		B7BDEAABAB942CD090896E968B9EC772 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A34CF2BDF2BAAAA205214A46E3FB8 /* ConstraintAttributes.swift */; };
+		DF8F0BE54B65D7A2F57DDEDD40C68A4C /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2DD2068D518D5D81D19012CF002209 /* ConstraintDescription.swift */; };
+		E5EBCA6B9515CE95011F939131E3AB23 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 77047BA0CE4C881D5D3086E82F707F2C /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC16DED66AC63ED6BACF2DA43A67C70 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976937C78348F2B5F44A61ACC73A6B5A /* ConstraintMaker.swift */; };
+		F2936913BE163153C259AAD4A0B2DCEF /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B49E44F7DAA1D777FB2C78461076E1 /* Debugging.swift */; };
+		F58348406A02471A876BF76D3A69E055 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		FDA68106D922622CCBAA2DB6B1C7676F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03A7775BE7AA834A93915536B28DACBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF01BBC8F9A74EDF5D1EDEFF73B710E5;
+			remoteInfo = SnapKit;
+		};
+		FD13B44D688D0B11AD0C4941998A1616 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0079365F815F6AB8719714B29052B6B8;
+			remoteInfo = ZOZolaZoomTransition;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089E2F12B33CB044DAA93FE0B5937C99 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		09247597029345634E7E9BEAB8CEFBDD /* Pods_ViewControllerTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewControllerTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09A2978396802F8FE821D321628C8411 /* Pods-ViewControllerTransition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ViewControllerTransition-umbrella.h"; sourceTree = "<group>"; };
+		0E4D34FB31ED72766856B8179DFB5BDD /* Pods-ViewControllerTransition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ViewControllerTransition.debug.xcconfig"; sourceTree = "<group>"; };
+		0EF149342D114372CADB0DB5497759D4 /* Pods-ViewControllerTransition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ViewControllerTransition.modulemap"; sourceTree = "<group>"; };
+		12092AE3CDD5EC5242814373601CBF44 /* EdgeInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EdgeInsets.swift; path = Source/EdgeInsets.swift; sourceTree = "<group>"; };
+		15C80A01AACB3E09F1E06C0EA5E89B05 /* Pods-ViewControllerTransition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ViewControllerTransition-dummy.m"; sourceTree = "<group>"; };
+		26B49E44F7DAA1D777FB2C78461076E1 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		2C17A62459194F701AD383D1EAD8CA71 /* Pods-ViewControllerTransition-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ViewControllerTransition-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4131B56F3C29FF46B1A37323C14EEB9B /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		4767FDDA25FEAB479C40B99508BC13F5 /* ZOZolaZoomTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZOZolaZoomTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4795DA3EF6D71996616E22A2ECA0A2C9 /* ZOZolaZoomTransition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZOZolaZoomTransition-prefix.pch"; sourceTree = "<group>"; };
+		60CE02B9A7BDA28B6A2593082587C66E /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		6319961435D2A9EDA782268EB6A57C66 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65436F1AFBDFA945B6B6EB0DA9880BD8 /* Pods-ViewControllerTransition-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ViewControllerTransition-resources.sh"; sourceTree = "<group>"; };
+		77047BA0CE4C881D5D3086E82F707F2C /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		781797902C23E483DE6D34C300CB1A05 /* Pods-ViewControllerTransition-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ViewControllerTransition-acknowledgements.plist"; sourceTree = "<group>"; };
+		86D1FF72C33E9F0CB83C559BFA3B7235 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		8859DF101FD64B65DDE946968B3D1E5F /* SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapKit.swift; path = Source/SnapKit.swift; sourceTree = "<group>"; };
+		8B8A34CF2BDF2BAAAA205214A46E3FB8 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		8E046FF362B36009BB112EF88895521F /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ViewController+SnapKit.swift"; path = "Source/ViewController+SnapKit.swift"; sourceTree = "<group>"; };
+		937DDFD81FE8873116DF433961130457 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		976937C78348F2B5F44A61ACC73A6B5A /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		9ADDE0C37DED30FFEDB70B332634DDB3 /* Pods-ViewControllerTransition-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ViewControllerTransition-frameworks.sh"; sourceTree = "<group>"; };
+		9C7E5D0D3BC7C3C61C0B4717D821D5C7 /* View+SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+SnapKit.swift"; path = "Source/View+SnapKit.swift"; sourceTree = "<group>"; };
+		AA675537BF4781AFC8C02EFC57CE6AAF /* ZOZolaZoomTransition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZOZolaZoomTransition-dummy.m"; sourceTree = "<group>"; };
+		ACA655898D4BB1BCF3440A5AC3BD3F35 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
+		B1E05076FC2C09F549D853C5C89B0DA0 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		B687CF24795233B7341565AFF471FC1D /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		B9601923EA34F6F78C445CBB05695D03 /* ZOZolaZoomTransition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZOZolaZoomTransition-umbrella.h"; sourceTree = "<group>"; };
+		BBEC0DE32439928583838E6CC1251319 /* ZOZolaZoomTransition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ZOZolaZoomTransition.modulemap; sourceTree = "<group>"; };
+		C82F495508FDE540EBA24ED097DDB41C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8633BB29609A09A517E75A3B3D56AC5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D7CDAA4C3973B8FDA9226E8E8B14492A /* ZOZolaZoomTransition.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZOZolaZoomTransition.xcconfig; sourceTree = "<group>"; };
+		D8A9A96FC459E4A978722EB9F098E5C5 /* Pods-ViewControllerTransition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ViewControllerTransition.release.xcconfig"; sourceTree = "<group>"; };
+		DB559DA86A346415DF8400786AED3C50 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		EB3E56F7BC9D58467C38C015B9061066 /* ZOZolaZoomTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZOZolaZoomTransition.m; path = ZOZolaZoomTransition/ZOZolaZoomTransition.m; sourceTree = "<group>"; };
+		F9137C4FE6554DD504D7E5D184BD70E0 /* ZOZolaZoomTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZOZolaZoomTransition.h; path = ZOZolaZoomTransition/ZOZolaZoomTransition.h; sourceTree = "<group>"; };
+		FD2DD2068D518D5D81D19012CF002209 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		530E10D4C2D712A3FB0BD30A85CFC7DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F58348406A02471A876BF76D3A69E055 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D610EDEFF5EA9E1070C3744BAB145CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA68106D922622CCBAA2DB6B1C7676F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8E02C6F8C76E8BE6092DB092D20FA0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CEB56D969AFE0F68EF56476DEA75DDA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06555B2088D19B0B772227647D6A3961 /* ZOZolaZoomTransition */ = {
+			isa = PBXGroup;
+			children = (
+				F9137C4FE6554DD504D7E5D184BD70E0 /* ZOZolaZoomTransition.h */,
+				EB3E56F7BC9D58467C38C015B9061066 /* ZOZolaZoomTransition.m */,
+				66E3A42548FE0F6F6ECB482E8D7C55D5 /* Support Files */,
+			);
+			path = ZOZolaZoomTransition;
+			sourceTree = "<group>";
+		};
+		33C97349115DA6FE0D2CF782DE727FA5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6924B6BA0CBD0EBA60B8A458835C5239 /* Pods-ViewControllerTransition */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3CE5434D5858F697871A5F4A6558B37B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09247597029345634E7E9BEAB8CEFBDD /* Pods_ViewControllerTransition.framework */,
+				937DDFD81FE8873116DF433961130457 /* SnapKit.framework */,
+				4767FDDA25FEAB479C40B99508BC13F5 /* ZOZolaZoomTransition.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		453C61485DAB7882A0755EAFDFB1292F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C8633BB29609A09A517E75A3B3D56AC5 /* Info.plist */,
+				DB559DA86A346415DF8400786AED3C50 /* SnapKit.modulemap */,
+				ACA655898D4BB1BCF3440A5AC3BD3F35 /* SnapKit.xcconfig */,
+				60CE02B9A7BDA28B6A2593082587C66E /* SnapKit-dummy.m */,
+				B687CF24795233B7341565AFF471FC1D /* SnapKit-prefix.pch */,
+				77047BA0CE4C881D5D3086E82F707F2C /* SnapKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		66E3A42548FE0F6F6ECB482E8D7C55D5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C82F495508FDE540EBA24ED097DDB41C /* Info.plist */,
+				BBEC0DE32439928583838E6CC1251319 /* ZOZolaZoomTransition.modulemap */,
+				D7CDAA4C3973B8FDA9226E8E8B14492A /* ZOZolaZoomTransition.xcconfig */,
+				AA675537BF4781AFC8C02EFC57CE6AAF /* ZOZolaZoomTransition-dummy.m */,
+				4795DA3EF6D71996616E22A2ECA0A2C9 /* ZOZolaZoomTransition-prefix.pch */,
+				B9601923EA34F6F78C445CBB05695D03 /* ZOZolaZoomTransition-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ZOZolaZoomTransition";
+			sourceTree = "<group>";
+		};
+		6924B6BA0CBD0EBA60B8A458835C5239 /* Pods-ViewControllerTransition */ = {
+			isa = PBXGroup;
+			children = (
+				6319961435D2A9EDA782268EB6A57C66 /* Info.plist */,
+				0EF149342D114372CADB0DB5497759D4 /* Pods-ViewControllerTransition.modulemap */,
+				2C17A62459194F701AD383D1EAD8CA71 /* Pods-ViewControllerTransition-acknowledgements.markdown */,
+				781797902C23E483DE6D34C300CB1A05 /* Pods-ViewControllerTransition-acknowledgements.plist */,
+				15C80A01AACB3E09F1E06C0EA5E89B05 /* Pods-ViewControllerTransition-dummy.m */,
+				9ADDE0C37DED30FFEDB70B332634DDB3 /* Pods-ViewControllerTransition-frameworks.sh */,
+				65436F1AFBDFA945B6B6EB0DA9880BD8 /* Pods-ViewControllerTransition-resources.sh */,
+				09A2978396802F8FE821D321628C8411 /* Pods-ViewControllerTransition-umbrella.h */,
+				0E4D34FB31ED72766856B8179DFB5BDD /* Pods-ViewControllerTransition.debug.xcconfig */,
+				D8A9A96FC459E4A978722EB9F098E5C5 /* Pods-ViewControllerTransition.release.xcconfig */,
+			);
+			name = "Pods-ViewControllerTransition";
+			path = "Target Support Files/Pods-ViewControllerTransition";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				FE7708ACCBD91A657E0D3E1BA607CD05 /* Pods */,
+				3CE5434D5858F697871A5F4A6558B37B /* Products */,
+				33C97349115DA6FE0D2CF782DE727FA5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AB6453A51E4C300F3C8683BEAB52751D /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				B1E05076FC2C09F549D853C5C89B0DA0 /* Constraint.swift */,
+				8B8A34CF2BDF2BAAAA205214A46E3FB8 /* ConstraintAttributes.swift */,
+				FD2DD2068D518D5D81D19012CF002209 /* ConstraintDescription.swift */,
+				86D1FF72C33E9F0CB83C559BFA3B7235 /* ConstraintItem.swift */,
+				976937C78348F2B5F44A61ACC73A6B5A /* ConstraintMaker.swift */,
+				089E2F12B33CB044DAA93FE0B5937C99 /* ConstraintRelation.swift */,
+				26B49E44F7DAA1D777FB2C78461076E1 /* Debugging.swift */,
+				12092AE3CDD5EC5242814373601CBF44 /* EdgeInsets.swift */,
+				4131B56F3C29FF46B1A37323C14EEB9B /* LayoutConstraint.swift */,
+				8859DF101FD64B65DDE946968B3D1E5F /* SnapKit.swift */,
+				9C7E5D0D3BC7C3C61C0B4717D821D5C7 /* View+SnapKit.swift */,
+				8E046FF362B36009BB112EF88895521F /* ViewController+SnapKit.swift */,
+				453C61485DAB7882A0755EAFDFB1292F /* Support Files */,
+			);
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE7708ACCBD91A657E0D3E1BA607CD05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB6453A51E4C300F3C8683BEAB52751D /* SnapKit */,
+				06555B2088D19B0B772227647D6A3961 /* ZOZolaZoomTransition */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		22B7B7FAFBAA61C7B2A464DE133A4377 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268A01D426C8F52C222A06055FE2A9E1 /* ZOZolaZoomTransition-umbrella.h in Headers */,
+				4F5D73739969C0FCBDA69BE911240A6D /* ZOZolaZoomTransition.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3631F95C571332CE0BA7287E0D9C8B5E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5EBCA6B9515CE95011F939131E3AB23 /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A669B0AC57AEF05928FABCF9BB58D9E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C940327291D8F8EE51AEE2AA3AA9B1F /* Pods-ViewControllerTransition-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0079365F815F6AB8719714B29052B6B8 /* ZOZolaZoomTransition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7231A173B9A93C54734F929930264005 /* Build configuration list for PBXNativeTarget "ZOZolaZoomTransition" */;
+			buildPhases = (
+				4B3CD1D333FA76435802073BAF719A56 /* Sources */,
+				D8E02C6F8C76E8BE6092DB092D20FA0B /* Frameworks */,
+				22B7B7FAFBAA61C7B2A464DE133A4377 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZOZolaZoomTransition;
+			productName = ZOZolaZoomTransition;
+			productReference = 4767FDDA25FEAB479C40B99508BC13F5 /* ZOZolaZoomTransition.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CF01BBC8F9A74EDF5D1EDEFF73B710E5 /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C12877B90378E97BA5EEAD4E3207C2B /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				0B88328486FF32B06B41D46FACD1C364 /* Sources */,
+				7D610EDEFF5EA9E1070C3744BAB145CF /* Frameworks */,
+				3631F95C571332CE0BA7287E0D9C8B5E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 937DDFD81FE8873116DF433961130457 /* SnapKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FBF05126103AC765DBE5AE7752F8F79F /* Pods-ViewControllerTransition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F9808942CC42B1CF69A7A8413548388 /* Build configuration list for PBXNativeTarget "Pods-ViewControllerTransition" */;
+			buildPhases = (
+				4C097C0CE42553F8A0D830CFF5D00BC4 /* Sources */,
+				530E10D4C2D712A3FB0BD30A85CFC7DA /* Frameworks */,
+				6A669B0AC57AEF05928FABCF9BB58D9E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6380E8264E000ECECFE6BFF8E365C875 /* PBXTargetDependency */,
+				600EE3A9388A872799A22EEA5DE65AB7 /* PBXTargetDependency */,
+			);
+			name = "Pods-ViewControllerTransition";
+			productName = "Pods-ViewControllerTransition";
+			productReference = 09247597029345634E7E9BEAB8CEFBDD /* Pods_ViewControllerTransition.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 3CE5434D5858F697871A5F4A6558B37B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBF05126103AC765DBE5AE7752F8F79F /* Pods-ViewControllerTransition */,
+				CF01BBC8F9A74EDF5D1EDEFF73B710E5 /* SnapKit */,
+				0079365F815F6AB8719714B29052B6B8 /* ZOZolaZoomTransition */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B88328486FF32B06B41D46FACD1C364 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EA1B3D37EF75A9F5BE1184BE4C8DB04 /* Constraint.swift in Sources */,
+				B7BDEAABAB942CD090896E968B9EC772 /* ConstraintAttributes.swift in Sources */,
+				DF8F0BE54B65D7A2F57DDEDD40C68A4C /* ConstraintDescription.swift in Sources */,
+				96B92D43A97BA92C4A26C7CCD33C7295 /* ConstraintItem.swift in Sources */,
+				EEC16DED66AC63ED6BACF2DA43A67C70 /* ConstraintMaker.swift in Sources */,
+				AB7E469FDE56ED109ECC351EA293AFDF /* ConstraintRelation.swift in Sources */,
+				F2936913BE163153C259AAD4A0B2DCEF /* Debugging.swift in Sources */,
+				4AC11FD423645BEB0B85007A55335AEC /* EdgeInsets.swift in Sources */,
+				5BB4461DF1AEA7030E846EE3805949AF /* LayoutConstraint.swift in Sources */,
+				7BEFE8A820FD00DF378D2A342AF07C9A /* SnapKit-dummy.m in Sources */,
+				63D935144DB947E77252919B66E335CD /* SnapKit.swift in Sources */,
+				1E39E2782FE5049EC2AD36DCF9CE49E6 /* View+SnapKit.swift in Sources */,
+				104EC4CFF0E86AB671FF45C8C8F3B1E8 /* ViewController+SnapKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B3CD1D333FA76435802073BAF719A56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A73D273BE77E56FECF8058731A01DBD2 /* ZOZolaZoomTransition-dummy.m in Sources */,
+				6D79D0AC9E09954638009794E0298DB5 /* ZOZolaZoomTransition.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C097C0CE42553F8A0D830CFF5D00BC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FE8800D5812113B1FC580788B4F892D /* Pods-ViewControllerTransition-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		600EE3A9388A872799A22EEA5DE65AB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZOZolaZoomTransition;
+			target = 0079365F815F6AB8719714B29052B6B8 /* ZOZolaZoomTransition */;
+			targetProxy = FD13B44D688D0B11AD0C4941998A1616 /* PBXContainerItemProxy */;
+		};
+		6380E8264E000ECECFE6BFF8E365C875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = CF01BBC8F9A74EDF5D1EDEFF73B710E5 /* SnapKit */;
+			targetProxy = 03A7775BE7AA834A93915536B28DACBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		034014829C1E4434983CF3A690C12017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		341F5E1FEFC5023D4C8C2008CE98B079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E4D34FB31ED72766856B8179DFB5BDD /* Pods-ViewControllerTransition.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ViewControllerTransition/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ViewControllerTransition/Pods-ViewControllerTransition.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ViewControllerTransition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3EB4B9D48F2321E2B92A0A8B6DD5C677 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7CDAA4C3973B8FDA9226E8E8B14492A /* ZOZolaZoomTransition.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ZOZolaZoomTransition/ZOZolaZoomTransition-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZOZolaZoomTransition/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZOZolaZoomTransition/ZOZolaZoomTransition.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ZOZolaZoomTransition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		47B3816CDBF1C9CC7A352CC7DA6A1FBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8A9A96FC459E4A978722EB9F098E5C5 /* Pods-ViewControllerTransition.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ViewControllerTransition/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ViewControllerTransition/Pods-ViewControllerTransition.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ViewControllerTransition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		96E54162DB654790CDD3AC9D7E9870F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7CDAA4C3973B8FDA9226E8E8B14492A /* ZOZolaZoomTransition.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ZOZolaZoomTransition/ZOZolaZoomTransition-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZOZolaZoomTransition/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZOZolaZoomTransition/ZOZolaZoomTransition.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ZOZolaZoomTransition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A32B907B610C3599251ED3B1F783F396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACA655898D4BB1BCF3440A5AC3BD3F35 /* SnapKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C7E474A03CAE21F1CB6046E7344C59BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D93466FCBA4A3B616B16AB8BAEECF742 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACA655898D4BB1BCF3440A5AC3BD3F35 /* SnapKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C12877B90378E97BA5EEAD4E3207C2B /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A32B907B610C3599251ED3B1F783F396 /* Debug */,
+				D93466FCBA4A3B616B16AB8BAEECF742 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034014829C1E4434983CF3A690C12017 /* Debug */,
+				C7E474A03CAE21F1CB6046E7344C59BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7231A173B9A93C54734F929930264005 /* Build configuration list for PBXNativeTarget "ZOZolaZoomTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EB4B9D48F2321E2B92A0A8B6DD5C677 /* Debug */,
+				96E54162DB654790CDD3AC9D7E9870F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F9808942CC42B1CF69A7A8413548388 /* Build configuration list for PBXNativeTarget "Pods-ViewControllerTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				341F5E1FEFC5023D4C8C2008CE98B079 /* Debug */,
+				47B3816CDBF1C9CC7A352CC7DA6A1FBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

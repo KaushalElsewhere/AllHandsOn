@@ -1,0 +1,15 @@
+PODS:
+  - SnapKit (0.18.0)
+  - ZOZolaZoomTransition (1.0.0)
+
+DEPENDENCIES:
+  - SnapKit (= 0.18.0)
+  - ZOZolaZoomTransition (~> 1.0.0)
+
+SPEC CHECKSUMS:
+  SnapKit: e1f090a6d47b1dd4bd89b73f72b6746a7835ef3c
+  ZOZolaZoomTransition: 650b873204e4fe601334a99b49628d19c8e54cdd
+
+PODFILE CHECKSUM: cea95c3a1a5c2c31f8b1d647edbbbc8d8a999606
+
+COCOAPODS: 1.0.1

@@ -1,0 +1,8 @@
+platform :ios, '9.0'
+use_frameworks!
+
+target 'ViewControllerTransition' do
+    pod 'SnapKit', '0.18.0'
+    pod 'ZOZolaZoomTransition', '~> 1.0.0'
+
+end
