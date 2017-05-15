@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OnO-kI-FfB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="SXL-yq-SFN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OnO-kI-FfB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3ve-I4-JUu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BW9-hX-wgt" kind="relationship" relationship="rootViewController" id="dTu-I0-x71"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jb4-Xf-r5A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-76" y="138.98050974512745"/>
+        </scene>
+        <!--Create Order View Controller-->
+        <scene sceneID="xUU-oz-Zd0">
+            <objects>
+                <tableViewController id="BW9-hX-wgt" customClass="CreateOrderViewController" customModule="CleanSwiftTry" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="vSN-SV-eNh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="qDY-TG-6qt">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2vT-PP-iro">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2vT-PP-iro" id="zff-HY-Ynl">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RFf-7A-ZiZ">
+                                                    <rect key="frame" x="34" y="6" width="307" height="30"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="BW9-hX-wgt" id="uqa-3I-U8E"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="RFf-7A-ZiZ" firstAttribute="leading" secondItem="zff-HY-Ynl" secondAttribute="leading" constant="34" id="EMM-Md-Pwt"/>
+                                                <constraint firstAttribute="trailing" secondItem="RFf-7A-ZiZ" secondAttribute="trailing" constant="34" id="LBs-X5-8Dg"/>
+                                                <constraint firstItem="RFf-7A-ZiZ" firstAttribute="top" secondItem="zff-HY-Ynl" secondAttribute="top" constant="6" id="enC-ho-Ya3"/>
+                                                <constraint firstAttribute="bottom" secondItem="RFf-7A-ZiZ" secondAttribute="bottom" constant="7" id="t0x-bx-ah2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="DYc-K2-1zS"/>
+                    <connections>
+                        <outlet property="pickerView" destination="7XY-9b-3Ap" id="lEd-rf-G4i"/>
+                        <outlet property="shippingTextField" destination="RFf-7A-ZiZ" id="eqT-54-1iH"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gUB-li-x1M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pickerView contentMode="scaleToFill" id="7XY-9b-3Ap">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <outlet property="dataSource" destination="BW9-hX-wgt" id="cX3-f3-QQg"/>
+                        <outlet property="delegate" destination="BW9-hX-wgt" id="wmn-q9-UkL"/>
+                    </connections>
+                </pickerView>
+            </objects>
+            <point key="canvasLocation" x="888.79999999999995" y="151.57421289355324"/>
+        </scene>
+    </scenes>
+</document>

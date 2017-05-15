@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2631A4847FE6C09118A040C2 /* Pods_SwaggerAPiConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D090DF7427DF2DEDB1844C3 /* Pods_SwaggerAPiConnect.framework */; };
 		E18C1F551DDAB24300ACE4BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18C1F541DDAB24300ACE4BB /* AppDelegate.swift */; };
 		E18C1F571DDAB24300ACE4BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18C1F561DDAB24300ACE4BB /* ViewController.swift */; };
 		E18C1F5A1DDAB24300ACE4BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E18C1F581DDAB24300ACE4BB /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D090DF7427DF2DEDB1844C3 /* Pods_SwaggerAPiConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwaggerAPiConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82441D2C52A797D773BD8D18 /* Pods-SwaggerAPiConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwaggerAPiConnect.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwaggerAPiConnect/Pods-SwaggerAPiConnect.release.xcconfig"; sourceTree = "<group>"; };
+		99FBEAAF1594686BC4128EB2 /* Pods-SwaggerAPiConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwaggerAPiConnect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwaggerAPiConnect/Pods-SwaggerAPiConnect.debug.xcconfig"; sourceTree = "<group>"; };
 		E18C1F511DDAB24300ACE4BB /* SwaggerAPiConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwaggerAPiConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18C1F541DDAB24300ACE4BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E18C1F561DDAB24300ACE4BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2631A4847FE6C09118A040C2 /* Pods_SwaggerAPiConnect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43B07E246369EC36FCB49503 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99FBEAAF1594686BC4128EB2 /* Pods-SwaggerAPiConnect.debug.xcconfig */,
+				82441D2C52A797D773BD8D18 /* Pods-SwaggerAPiConnect.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8EFE431EE6B8855AF7A13C94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D090DF7427DF2DEDB1844C3 /* Pods_SwaggerAPiConnect.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E18C1F481DDAB24300ACE4BB = {
 			isa = PBXGroup;
 			children = (
 				E18C1F531DDAB24300ACE4BB /* SwaggerAPiConnect */,
 				E18C1F521DDAB24300ACE4BB /* Products */,
+				43B07E246369EC36FCB49503 /* Pods */,
+				8EFE431EE6B8855AF7A13C94 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E18C1F631DDAB24300ACE4BB /* Build configuration list for PBXNativeTarget "SwaggerAPiConnect" */;
 			buildPhases = (
+				99DE3675ABF9CEE34C66A5EA /* [CP] Check Pods Manifest.lock */,
 				E18C1F4D1DDAB24300ACE4BB /* Sources */,
 				E18C1F4E1DDAB24300ACE4BB /* Frameworks */,
 				E18C1F4F1DDAB24300ACE4BB /* Resources */,
+				CE4DA78EF345DBFF1BD6835C /* [CP] Embed Pods Frameworks */,
+				3633E28F1823E39C381E7115 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3633E28F1823E39C381E7115 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwaggerAPiConnect/Pods-SwaggerAPiConnect-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99DE3675ABF9CEE34C66A5EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CE4DA78EF345DBFF1BD6835C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwaggerAPiConnect/Pods-SwaggerAPiConnect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E18C1F4D1DDAB24300ACE4BB /* Sources */ = {
@@ -249,6 +324,7 @@
 		};
 		E18C1F641DDAB24300ACE4BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99FBEAAF1594686BC4128EB2 /* Pods-SwaggerAPiConnect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwaggerAPiConnect/Info.plist;
@@ -260,6 +336,7 @@
 		};
 		E18C1F651DDAB24300ACE4BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82441D2C52A797D773BD8D18 /* Pods-SwaggerAPiConnect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwaggerAPiConnect/Info.plist;
@@ -288,6 +365,7 @@
 				E18C1F651DDAB24300ACE4BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

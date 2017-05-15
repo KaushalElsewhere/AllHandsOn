@@ -2,6 +2,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'ScrollingNavDemo' do
-    pod 'AMScrollingNavbar', '~> 2.1.2' 
+    pod 'AMScrollingNavbar', '~> 2.1.2'
+    pod 'LXReorderableCollectionViewFlowLayout', '~> 0.1.1'
 
 end

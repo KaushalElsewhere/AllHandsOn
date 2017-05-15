@@ -1,12 +1,15 @@
 PODS:
   - AMScrollingNavbar (2.1.2)
+  - LXReorderableCollectionViewFlowLayout (0.1.1)
 
 DEPENDENCIES:
   - AMScrollingNavbar (~> 2.1.2)
+  - LXReorderableCollectionViewFlowLayout (~> 0.1.1)
 
 SPEC CHECKSUMS:
   AMScrollingNavbar: 403b8651052459b433941bd4bc4215a64b992e52
+  LXReorderableCollectionViewFlowLayout: c89e0f693744c5cb96718822a8455a7de99d90ea
 
-PODFILE CHECKSUM: 1578e7daa3320950e35f7f39c78267671be88c8f
+PODFILE CHECKSUM: beec21583c1829cca2e312ac436a9bdf462e31e3
 
 COCOAPODS: 1.0.1

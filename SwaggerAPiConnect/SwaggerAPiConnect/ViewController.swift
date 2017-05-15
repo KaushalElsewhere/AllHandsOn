@@ -7,17 +7,44 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        login()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    let url = "https://api.stage.totsamour.com/auth/login"
+    
+//    let headers: HTTPHeaders = [
+//        "Authorization": "Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==",
+//        "Accept": "application/json"
+//    ]
+    
+    let header: HTTPHeaders = [
+        "x-socket-api-key" : "7b16afe1aaa3ec502e074ed15c0c020d079a4f9f"
+    ]
+    
+    func login() {
+        
+        
+        Alamofire.request(.POST, url).responseJSON { (response) in
+            print(response)
+        }
+        
+//        Alamofire.request(url).responseJSON { response in
+//            print(response.request)  // original URL request
+//            print(response.response) // HTTP URL response
+//            print(response.data)     // server data
+//            print(response.result)   // result of response serialization
+//            
+//            if let JSON = response.result.value {
+//                print("JSON: \(JSON)")
+//            }
+//        }
     }
 
 

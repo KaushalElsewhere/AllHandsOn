@@ -1,0 +1,15 @@
+PODS:
+  - IGListKit (2.0.0)
+  - ObjectMapper (1.5.0)
+
+DEPENDENCIES:
+  - IGListKit (~> 2.0.0)
+  - ObjectMapper (~> 1.4)
+
+SPEC CHECKSUMS:
+  IGListKit: ee255e4e61865bc3e01ca96b690c5435c2887849
+  ObjectMapper: 386645adca9d9d23b95eda43090b09d66444cf14
+
+PODFILE CHECKSUM: 3ddaa05aaf4793fc6ec9e7030f5ae9a8be9af0f1
+
+COCOAPODS: 1.2.0

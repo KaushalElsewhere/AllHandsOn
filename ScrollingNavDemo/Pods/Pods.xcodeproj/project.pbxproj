@@ -7,19 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0334ACE54369B7E788FC77B7A5F67A08 /* AMScrollingNavbar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E465C51FF5D077893DBFC8003FCD4EA1 /* AMScrollingNavbar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B065BA7D7E05581175E8471E786AFF8 /* ScrollingNavbar+Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA1817A0329C9A1E7DB1DEFD1E55089 /* ScrollingNavbar+Sizes.swift */; };
-		22BB949070312E484E4D515A4E95121A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		549D423237F4C328B414C20F718F136F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		5F6D973328F8F5E6760028CCD17CEBE6 /* ScrollingNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDBDEED671385CE5DCA6861FAB36221 /* ScrollingNavigationViewController.swift */; };
-		6FC4E01BEDFAD2ECF5783C4E16D34B17 /* ScrollingNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F431794A42463F0F211C5EFFDBAC52 /* ScrollingNavigationController.swift */; };
-		B5B8985540776245F2DF414C524E4B64 /* AMScrollingNavbar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1109ED076C1048FAD6B65E45C91A6206 /* AMScrollingNavbar-dummy.m */; };
-		D0B545A9EAEC1F8D2B22FEEE34881FF2 /* Pods-ScrollingNavDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA73ABCD880B8B537F79992A0B1312A3 /* Pods-ScrollingNavDemo-dummy.m */; };
-		D9DA6A68D4101CF48CB4E6CB259B3D2F /* Pods-ScrollingNavDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EAC9C3C61BD3878B7A0128C17317193 /* Pods-ScrollingNavDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0334ACE54369B7E788FC77B7A5F67A08 /* AMScrollingNavbar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A975DB342D2220F38D6E74A36D01849E /* AMScrollingNavbar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		180EB2D0F348E4EA91F8D6F3F69E9FAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9854452B704969D40D932335DEE0FF /* Foundation.framework */; };
+		1B065BA7D7E05581175E8471E786AFF8 /* ScrollingNavbar+Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68A8A2D4EEFCCF95D34B78D65C884AD /* ScrollingNavbar+Sizes.swift */; };
+		3920C3564E1A6A3601141538E8F66A55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9854452B704969D40D932335DEE0FF /* Foundation.framework */; };
+		398B4A8B1F97AB47CC792CF623819161 /* LXReorderableCollectionViewFlowLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B0CB0DC784F90663BFA8F648A8E9C73 /* LXReorderableCollectionViewFlowLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		549D423237F4C328B414C20F718F136F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9854452B704969D40D932335DEE0FF /* Foundation.framework */; };
+		5F6D973328F8F5E6760028CCD17CEBE6 /* ScrollingNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187CD91B5FE2B01A36ED37EC8E12BF8B /* ScrollingNavigationViewController.swift */; };
+		60BD790B2E979C7606655C7D74F2FFFD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CCDF0ACEE37ED4308724E62FCDE939 /* CoreGraphics.framework */; };
+		6FC4E01BEDFAD2ECF5783C4E16D34B17 /* ScrollingNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC8821F4E9B6150FF169478C470C31A /* ScrollingNavigationController.swift */; };
+		6FF2B039D859E9099C442BCC69AB7121 /* Pods-ScrollingNavDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA73ABCD880B8B537F79992A0B1312A3 /* Pods-ScrollingNavDemo-dummy.m */; };
+		77177AB88EC82F4501D0AF65DE89CA4C /* LXReorderableCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F9EB1E9B2D22AAEC6D82C38BDC136E /* LXReorderableCollectionViewFlowLayout.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8120020CB714CE2F6290BAD6FB146FE1 /* LXReorderableCollectionViewFlowLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC908CCBA4FDB4ED0F4F59F49DA8DCB1 /* LXReorderableCollectionViewFlowLayout-dummy.m */; };
+		A13823D471D2D1497CE94D144D8F6C80 /* LXReorderableCollectionViewFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = CA62A25EAD4C4F4A40CF227D5F41C8FC /* LXReorderableCollectionViewFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5B8985540776245F2DF414C524E4B64 /* AMScrollingNavbar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC4FFCECB8548CE550D47CACB539276 /* AMScrollingNavbar-dummy.m */; };
+		ED911B6F9D8F6CEDFE2937AB543D7FB0 /* Pods-ScrollingNavDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EAC9C3C61BD3878B7A0128C17317193 /* Pods-ScrollingNavDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7F597789BE3DE19E29426CA28B403AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2331BAF78D4EDDCD400CF6388C7978 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E426258AA3DE84587BCDE1DDE867039A /* PBXContainerItemProxy */ = {
+		3298E1D21CBA036C5D7190DFBFE1FC44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F735FFA82CF571222472A2F076171200;
+			remoteInfo = LXReorderableCollectionViewFlowLayout;
+		};
+		EF14EE670BB63CE440C643B46B3C8510 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -29,37 +43,48 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02E2BE0B4F3818DFDDF0DD5E9DA9896F /* AMScrollingNavbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AMScrollingNavbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		069B3DF7021FF2DA6FCD5E9FFBFD8F55 /* Pods-ScrollingNavDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ScrollingNavDemo.modulemap"; sourceTree = "<group>"; };
-		0A47A245585A0B6EEC08404AF5A62E22 /* AMScrollingNavbar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AMScrollingNavbar.xcconfig; sourceTree = "<group>"; };
 		0EAC9C3C61BD3878B7A0128C17317193 /* Pods-ScrollingNavDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ScrollingNavDemo-umbrella.h"; sourceTree = "<group>"; };
-		1109ED076C1048FAD6B65E45C91A6206 /* AMScrollingNavbar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AMScrollingNavbar-dummy.m"; sourceTree = "<group>"; };
+		0F2331BAF78D4EDDCD400CF6388C7978 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		1738FB5113DC6FE6ED03D63FF719E28D /* Pods-ScrollingNavDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScrollingNavDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		2A6136CA8250A7DFB9B45FE58E756976 /* Pods_ScrollingNavDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollingNavDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		187CD91B5FE2B01A36ED37EC8E12BF8B /* ScrollingNavigationViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollingNavigationViewController.swift; path = Source/ScrollingNavigationViewController.swift; sourceTree = "<group>"; };
+		259E88E895E9349AD15ACBC397B52DFB /* AMScrollingNavbar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMScrollingNavbar-prefix.pch"; sourceTree = "<group>"; };
+		2DC4FFCECB8548CE550D47CACB539276 /* AMScrollingNavbar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AMScrollingNavbar-dummy.m"; sourceTree = "<group>"; };
+		33009CAEFEBA64EE7668DCCABCAC7690 /* LXReorderableCollectionViewFlowLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LXReorderableCollectionViewFlowLayout-prefix.pch"; sourceTree = "<group>"; };
+		3C9854452B704969D40D932335DEE0FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		414B0686CE0A8E3C989D39CD35E76B7F /* LXReorderableCollectionViewFlowLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LXReorderableCollectionViewFlowLayout.xcconfig; sourceTree = "<group>"; };
+		41B84FB813A8008B3855570FFABF5038 /* Pods_ScrollingNavDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollingNavDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		507AA091F5A4457681AAC6B9099B079D /* Pods-ScrollingNavDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScrollingNavDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		52F431794A42463F0F211C5EFFDBAC52 /* ScrollingNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollingNavigationController.swift; path = Source/ScrollingNavigationController.swift; sourceTree = "<group>"; };
 		5B0C02405322D22E4376D7CA13870E12 /* Pods-ScrollingNavDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScrollingNavDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		5B58B774EA6968AE926710852350355D /* Pods-ScrollingNavDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScrollingNavDemo.release.xcconfig"; sourceTree = "<group>"; };
-		6963181AFF6E58D286B072F5687DE8A2 /* AMScrollingNavbar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMScrollingNavbar-prefix.pch"; sourceTree = "<group>"; };
 		6F2707A35183C5BDB661C43CE2F56FEB /* Pods-ScrollingNavDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScrollingNavDemo-resources.sh"; sourceTree = "<group>"; };
+		713C9A8225D27D2AA3F0DAF47774880D /* AMScrollingNavbar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AMScrollingNavbar.modulemap; sourceTree = "<group>"; };
 		8643C1442CE971F316E4E10BCABABAF5 /* Pods-ScrollingNavDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScrollingNavDemo-frameworks.sh"; sourceTree = "<group>"; };
+		87F9EB1E9B2D22AAEC6D82C38BDC136E /* LXReorderableCollectionViewFlowLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LXReorderableCollectionViewFlowLayout.m; path = LXReorderableCollectionViewFlowLayout/LXReorderableCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B0CB0DC784F90663BFA8F648A8E9C73 /* LXReorderableCollectionViewFlowLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LXReorderableCollectionViewFlowLayout-umbrella.h"; sourceTree = "<group>"; };
+		A975DB342D2220F38D6E74A36D01849E /* AMScrollingNavbar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMScrollingNavbar-umbrella.h"; sourceTree = "<group>"; };
 		ADD560590717CE20C73499F8335499A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BEB79ECF5FA71D2D785A5DDB914B708A /* AMScrollingNavbar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AMScrollingNavbar.modulemap; sourceTree = "<group>"; };
-		BEDBDEED671385CE5DCA6861FAB36221 /* ScrollingNavigationViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollingNavigationViewController.swift; path = Source/ScrollingNavigationViewController.swift; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D9ED25379541A5F8E57F1449D3AC67CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DABBE4F0D7898EC8CCE87F913AED2DCE /* AMScrollingNavbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AMScrollingNavbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E465C51FF5D077893DBFC8003FCD4EA1 /* AMScrollingNavbar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMScrollingNavbar-umbrella.h"; sourceTree = "<group>"; };
-		EFA1817A0329C9A1E7DB1DEFD1E55089 /* ScrollingNavbar+Sizes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ScrollingNavbar+Sizes.swift"; path = "Source/ScrollingNavbar+Sizes.swift"; sourceTree = "<group>"; };
+		B3513E5A60CE0929BAB2C820BE98E063 /* AMScrollingNavbar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AMScrollingNavbar.xcconfig; sourceTree = "<group>"; };
+		B4CCDF0ACEE37ED4308724E62FCDE939 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		BB839B93D47C40F695E4EEA4CAEC7DE7 /* LXReorderableCollectionViewFlowLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LXReorderableCollectionViewFlowLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA62A25EAD4C4F4A40CF227D5F41C8FC /* LXReorderableCollectionViewFlowLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LXReorderableCollectionViewFlowLayout.h; path = LXReorderableCollectionViewFlowLayout/LXReorderableCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		DFDD8B1A478FA87FA715511FA8AEF135 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDF628A1D58DD25FCE1B45AB49D9F308 /* LXReorderableCollectionViewFlowLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LXReorderableCollectionViewFlowLayout.modulemap; sourceTree = "<group>"; };
+		F68A8A2D4EEFCCF95D34B78D65C884AD /* ScrollingNavbar+Sizes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ScrollingNavbar+Sizes.swift"; path = "Source/ScrollingNavbar+Sizes.swift"; sourceTree = "<group>"; };
+		F763DBED38DA215D88F27F32174A9A11 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA73ABCD880B8B537F79992A0B1312A3 /* Pods-ScrollingNavDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScrollingNavDemo-dummy.m"; sourceTree = "<group>"; };
+		FC908CCBA4FDB4ED0F4F59F49DA8DCB1 /* LXReorderableCollectionViewFlowLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LXReorderableCollectionViewFlowLayout-dummy.m"; sourceTree = "<group>"; };
+		FEC8821F4E9B6150FF169478C470C31A /* ScrollingNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollingNavigationController.swift; path = Source/ScrollingNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		98A786213C09EC4AE16BE92A06EDF3FE /* Frameworks */ = {
+		69C46326B342A3FCA12A63D8AB61C034 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22BB949070312E484E4D515A4E95121A /* Foundation.framework in Frameworks */,
+				3920C3564E1A6A3601141538E8F66A55 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,23 +96,79 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F545CBA2F214EA706F7D66A19AAF9940 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60BD790B2E979C7606655C7D74F2FFFD /* CoreGraphics.framework in Frameworks */,
+				180EB2D0F348E4EA91F8D6F3F69E9FAC /* Foundation.framework in Frameworks */,
+				F7F597789BE3DE19E29426CA28B403AE /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		23604820B1843C45419DDC9515C8A25E /* Pods */ = {
+		0A68FE8A6158D395EC4CB10F8472F165 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				F82395C22EF46AB7C6E0645087F97E3D /* AMScrollingNavbar */,
+				B4CCDF0ACEE37ED4308724E62FCDE939 /* CoreGraphics.framework */,
+				3C9854452B704969D40D932335DEE0FF /* Foundation.framework */,
+				0F2331BAF78D4EDDCD400CF6388C7978 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		0B9B53FA3636913B0673F8F78326C841 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D35214422E007D711BB08279915C77F /* AMScrollingNavbar */,
+				9BCAB39B40B3C07921ABCD34A580B86C /* LXReorderableCollectionViewFlowLayout */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+				0A68FE8A6158D395EC4CB10F8472F165 /* iOS */,
 			);
-			name = iOS;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D35214422E007D711BB08279915C77F /* AMScrollingNavbar */ = {
+			isa = PBXGroup;
+			children = (
+				F68A8A2D4EEFCCF95D34B78D65C884AD /* ScrollingNavbar+Sizes.swift */,
+				FEC8821F4E9B6150FF169478C470C31A /* ScrollingNavigationController.swift */,
+				187CD91B5FE2B01A36ED37EC8E12BF8B /* ScrollingNavigationViewController.swift */,
+				C7E858F05CA25855AF8AA6AA753C9207 /* Support Files */,
+			);
+			path = AMScrollingNavbar;
+			sourceTree = "<group>";
+		};
+		6288488A14B59D9D72D383BCA21A7A60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02E2BE0B4F3818DFDDF0DD5E9DA9896F /* AMScrollingNavbar.framework */,
+				BB839B93D47C40F695E4EEA4CAEC7DE7 /* LXReorderableCollectionViewFlowLayout.framework */,
+				41B84FB813A8008B3855570FFABF5038 /* Pods_ScrollingNavDemo.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		745EA1EFF2D231F71F10A0709D91580C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F763DBED38DA215D88F27F32174A9A11 /* Info.plist */,
+				EDF628A1D58DD25FCE1B45AB49D9F308 /* LXReorderableCollectionViewFlowLayout.modulemap */,
+				414B0686CE0A8E3C989D39CD35E76B7F /* LXReorderableCollectionViewFlowLayout.xcconfig */,
+				FC908CCBA4FDB4ED0F4F59F49DA8DCB1 /* LXReorderableCollectionViewFlowLayout-dummy.m */,
+				33009CAEFEBA64EE7668DCCABCAC7690 /* LXReorderableCollectionViewFlowLayout-prefix.pch */,
+				9B0CB0DC784F90663BFA8F648A8E9C73 /* LXReorderableCollectionViewFlowLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LXReorderableCollectionViewFlowLayout";
 			sourceTree = "<group>";
 		};
 		78E817A29A1980D22BA6E22901AF192B /* Pods-ScrollingNavDemo */ = {
@@ -112,28 +193,21 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				23604820B1843C45419DDC9515C8A25E /* Pods */,
-				990933882BACD5B57CE65994CA7B79FB /* Products */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				0B9B53FA3636913B0673F8F78326C841 /* Pods */,
+				6288488A14B59D9D72D383BCA21A7A60 /* Products */,
 				C3E77CF13FF0DA104DD897305AA7008C /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		990933882BACD5B57CE65994CA7B79FB /* Products */ = {
+		9BCAB39B40B3C07921ABCD34A580B86C /* LXReorderableCollectionViewFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
-				DABBE4F0D7898EC8CCE87F913AED2DCE /* AMScrollingNavbar.framework */,
-				2A6136CA8250A7DFB9B45FE58E756976 /* Pods_ScrollingNavDemo.framework */,
+				CA62A25EAD4C4F4A40CF227D5F41C8FC /* LXReorderableCollectionViewFlowLayout.h */,
+				87F9EB1E9B2D22AAEC6D82C38BDC136E /* LXReorderableCollectionViewFlowLayout.m */,
+				745EA1EFF2D231F71F10A0709D91580C /* Support Files */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
-			);
-			name = Frameworks;
+			path = LXReorderableCollectionViewFlowLayout;
 			sourceTree = "<group>";
 		};
 		C3E77CF13FF0DA104DD897305AA7008C /* Targets Support Files */ = {
@@ -144,29 +218,18 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		D9DE9E544A2CC9F926119B789DAECB14 /* Support Files */ = {
+		C7E858F05CA25855AF8AA6AA753C9207 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BEB79ECF5FA71D2D785A5DDB914B708A /* AMScrollingNavbar.modulemap */,
-				0A47A245585A0B6EEC08404AF5A62E22 /* AMScrollingNavbar.xcconfig */,
-				1109ED076C1048FAD6B65E45C91A6206 /* AMScrollingNavbar-dummy.m */,
-				6963181AFF6E58D286B072F5687DE8A2 /* AMScrollingNavbar-prefix.pch */,
-				E465C51FF5D077893DBFC8003FCD4EA1 /* AMScrollingNavbar-umbrella.h */,
-				D9ED25379541A5F8E57F1449D3AC67CC /* Info.plist */,
+				713C9A8225D27D2AA3F0DAF47774880D /* AMScrollingNavbar.modulemap */,
+				B3513E5A60CE0929BAB2C820BE98E063 /* AMScrollingNavbar.xcconfig */,
+				2DC4FFCECB8548CE550D47CACB539276 /* AMScrollingNavbar-dummy.m */,
+				259E88E895E9349AD15ACBC397B52DFB /* AMScrollingNavbar-prefix.pch */,
+				A975DB342D2220F38D6E74A36D01849E /* AMScrollingNavbar-umbrella.h */,
+				DFDD8B1A478FA87FA715511FA8AEF135 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/AMScrollingNavbar";
-			sourceTree = "<group>";
-		};
-		F82395C22EF46AB7C6E0645087F97E3D /* AMScrollingNavbar */ = {
-			isa = PBXGroup;
-			children = (
-				EFA1817A0329C9A1E7DB1DEFD1E55089 /* ScrollingNavbar+Sizes.swift */,
-				52F431794A42463F0F211C5EFFDBAC52 /* ScrollingNavigationController.swift */,
-				BEDBDEED671385CE5DCA6861FAB36221 /* ScrollingNavigationViewController.swift */,
-				D9DE9E544A2CC9F926119B789DAECB14 /* Support Files */,
-			);
-			path = AMScrollingNavbar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,17 +243,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FEE078A28BC7204A36B02B598A810941 /* Headers */ = {
+		B3DC2499EE51C1E2A733588DD037ED2F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9DA6A68D4101CF48CB4E6CB259B3D2F /* Pods-ScrollingNavDemo-umbrella.h in Headers */,
+				398B4A8B1F97AB47CC792CF623819161 /* LXReorderableCollectionViewFlowLayout-umbrella.h in Headers */,
+				A13823D471D2D1497CE94D144D8F6C80 /* LXReorderableCollectionViewFlowLayout.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C847732DB7C68DFDAE952E7E0AF98EED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED911B6F9D8F6CEDFE2937AB543D7FB0 /* Pods-ScrollingNavDemo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		13D9045860377A4D3D486EAE1F215C6F /* Pods-ScrollingNavDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05B1A2DF510219FC8945BCA151540544 /* Build configuration list for PBXNativeTarget "Pods-ScrollingNavDemo" */;
+			buildPhases = (
+				C362B5862A0EAA05B00A29739F976ED4 /* Sources */,
+				69C46326B342A3FCA12A63D8AB61C034 /* Frameworks */,
+				C847732DB7C68DFDAE952E7E0AF98EED /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE422706B10401BFD8E8A73319AE00F1 /* PBXTargetDependency */,
+				460B8863CEAA2CDB8FD23688821E4092 /* PBXTargetDependency */,
+			);
+			name = "Pods-ScrollingNavDemo";
+			productName = "Pods-ScrollingNavDemo";
+			productReference = 41B84FB813A8008B3855570FFABF5038 /* Pods_ScrollingNavDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		536B9F35AFF1A6725F02302B5F55F59B /* AMScrollingNavbar */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A179D6C79F6EFFD8C35F7FC04DAD800 /* Build configuration list for PBXNativeTarget "AMScrollingNavbar" */;
@@ -205,25 +296,24 @@
 			);
 			name = AMScrollingNavbar;
 			productName = AMScrollingNavbar;
-			productReference = DABBE4F0D7898EC8CCE87F913AED2DCE /* AMScrollingNavbar.framework */;
+			productReference = 02E2BE0B4F3818DFDDF0DD5E9DA9896F /* AMScrollingNavbar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CE57869EEAE5306CBBAD133854CEE093 /* Pods-ScrollingNavDemo */ = {
+		F735FFA82CF571222472A2F076171200 /* LXReorderableCollectionViewFlowLayout */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1FDA9818D4C828BE3C2DFC00B85EA562 /* Build configuration list for PBXNativeTarget "Pods-ScrollingNavDemo" */;
+			buildConfigurationList = AC31F52A8A253253B4014950E842E903 /* Build configuration list for PBXNativeTarget "LXReorderableCollectionViewFlowLayout" */;
 			buildPhases = (
-				34FB218396B30D71955BA13C04DFE786 /* Sources */,
-				98A786213C09EC4AE16BE92A06EDF3FE /* Frameworks */,
-				FEE078A28BC7204A36B02B598A810941 /* Headers */,
+				31B0D6D4FC1760463D599239F93CA49E /* Sources */,
+				F545CBA2F214EA706F7D66A19AAF9940 /* Frameworks */,
+				B3DC2499EE51C1E2A733588DD037ED2F /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7114592F7346ADF73B74B39853C9D720 /* PBXTargetDependency */,
 			);
-			name = "Pods-ScrollingNavDemo";
-			productName = "Pods-ScrollingNavDemo";
-			productReference = 2A6136CA8250A7DFB9B45FE58E756976 /* Pods_ScrollingNavDemo.framework */;
+			name = LXReorderableCollectionViewFlowLayout;
+			productName = LXReorderableCollectionViewFlowLayout;
+			productReference = BB839B93D47C40F695E4EEA4CAEC7DE7 /* LXReorderableCollectionViewFlowLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -243,22 +333,24 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 990933882BACD5B57CE65994CA7B79FB /* Products */;
+			productRefGroup = 6288488A14B59D9D72D383BCA21A7A60 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				536B9F35AFF1A6725F02302B5F55F59B /* AMScrollingNavbar */,
-				CE57869EEAE5306CBBAD133854CEE093 /* Pods-ScrollingNavDemo */,
+				F735FFA82CF571222472A2F076171200 /* LXReorderableCollectionViewFlowLayout */,
+				13D9045860377A4D3D486EAE1F215C6F /* Pods-ScrollingNavDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		34FB218396B30D71955BA13C04DFE786 /* Sources */ = {
+		31B0D6D4FC1760463D599239F93CA49E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0B545A9EAEC1F8D2B22FEEE34881FF2 /* Pods-ScrollingNavDemo-dummy.m in Sources */,
+				8120020CB714CE2F6290BAD6FB146FE1 /* LXReorderableCollectionViewFlowLayout-dummy.m in Sources */,
+				77177AB88EC82F4501D0AF65DE89CA4C /* LXReorderableCollectionViewFlowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,14 +365,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C362B5862A0EAA05B00A29739F976ED4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FF2B039D859E9099C442BCC69AB7121 /* Pods-ScrollingNavDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7114592F7346ADF73B74B39853C9D720 /* PBXTargetDependency */ = {
+		460B8863CEAA2CDB8FD23688821E4092 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LXReorderableCollectionViewFlowLayout;
+			target = F735FFA82CF571222472A2F076171200 /* LXReorderableCollectionViewFlowLayout */;
+			targetProxy = 3298E1D21CBA036C5D7190DFBFE1FC44 /* PBXContainerItemProxy */;
+		};
+		FE422706B10401BFD8E8A73319AE00F1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AMScrollingNavbar;
 			target = 536B9F35AFF1A6725F02302B5F55F59B /* AMScrollingNavbar */;
-			targetProxy = E426258AA3DE84587BCDE1DDE867039A /* PBXContainerItemProxy */;
+			targetProxy = EF14EE670BB63CE440C643B46B3C8510 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -327,9 +433,76 @@
 			};
 			name = Debug;
 		};
+		5432ABE190A8C115E85A613DC24827D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B58B774EA6968AE926710852350355D /* Pods-ScrollingNavDemo.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ScrollingNavDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ScrollingNavDemo/Pods-ScrollingNavDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ScrollingNavDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EF4BF336A4D74F48ED70A002E1CBA71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B0C02405322D22E4376D7CA13870E12 /* Pods-ScrollingNavDemo.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ScrollingNavDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ScrollingNavDemo/Pods-ScrollingNavDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ScrollingNavDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		BC89F1D5F7E828EAA1C10E7F9BB93604 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A47A245585A0B6EEC08404AF5A62E22 /* AMScrollingNavbar.xcconfig */;
+			baseConfigurationReference = B3513E5A60CE0929BAB2C820BE98E063 /* AMScrollingNavbar.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -359,7 +532,7 @@
 		};
 		C7388F816B6E288ABDBECDDEACFA3FAC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A47A245585A0B6EEC08404AF5A62E22 /* AMScrollingNavbar.xcconfig */;
+			baseConfigurationReference = B3513E5A60CE0929BAB2C820BE98E063 /* AMScrollingNavbar.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -424,9 +597,9 @@
 			};
 			name = Release;
 		};
-		E30FE52EAAAEC9A87A4D47B0F9830327 /* Debug */ = {
+		CF55DB6299A37177D18291B51033FAFF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B0C02405322D22E4376D7CA13870E12 /* Pods-ScrollingNavDemo.debug.xcconfig */;
+			baseConfigurationReference = 414B0686CE0A8E3C989D39CD35E76B7F /* LXReorderableCollectionViewFlowLayout.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -437,30 +610,25 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ScrollingNavDemo/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LXReorderableCollectionViewFlowLayout/LXReorderableCollectionViewFlowLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LXReorderableCollectionViewFlowLayout/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ScrollingNavDemo/Pods-ScrollingNavDemo.modulemap";
+				MODULEMAP_FILE = "Target Support Files/LXReorderableCollectionViewFlowLayout/LXReorderableCollectionViewFlowLayout.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ScrollingNavDemo;
+				PRODUCT_NAME = LXReorderableCollectionViewFlowLayout;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		FF45D4538A31F06F86054AAD30E9BF34 /* Release */ = {
+		DC40D7547E7C9B0533F9EFFE4C12E554 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B58B774EA6968AE926710852350355D /* Pods-ScrollingNavDemo.release.xcconfig */;
+			baseConfigurationReference = 414B0686CE0A8E3C989D39CD35E76B7F /* LXReorderableCollectionViewFlowLayout.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -471,18 +639,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ScrollingNavDemo/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LXReorderableCollectionViewFlowLayout/LXReorderableCollectionViewFlowLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LXReorderableCollectionViewFlowLayout/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ScrollingNavDemo/Pods-ScrollingNavDemo.modulemap";
+				MODULEMAP_FILE = "Target Support Files/LXReorderableCollectionViewFlowLayout/LXReorderableCollectionViewFlowLayout.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ScrollingNavDemo;
+				PRODUCT_NAME = LXReorderableCollectionViewFlowLayout;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -494,11 +658,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1FDA9818D4C828BE3C2DFC00B85EA562 /* Build configuration list for PBXNativeTarget "Pods-ScrollingNavDemo" */ = {
+		05B1A2DF510219FC8945BCA151540544 /* Build configuration list for PBXNativeTarget "Pods-ScrollingNavDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E30FE52EAAAEC9A87A4D47B0F9830327 /* Debug */,
-				FF45D4538A31F06F86054AAD30E9BF34 /* Release */,
+				7EF4BF336A4D74F48ED70A002E1CBA71 /* Debug */,
+				5432ABE190A8C115E85A613DC24827D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -517,6 +681,15 @@
 			buildConfigurations = (
 				BC89F1D5F7E828EAA1C10E7F9BB93604 /* Debug */,
 				C7388F816B6E288ABDBECDDEACFA3FAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC31F52A8A253253B4014950E842E903 /* Build configuration list for PBXNativeTarget "LXReorderableCollectionViewFlowLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF55DB6299A37177D18291B51033FAFF /* Debug */,
+				DC40D7547E7C9B0533F9EFFE4C12E554 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

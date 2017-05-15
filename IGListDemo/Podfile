@@ -1,0 +1,8 @@
+platform :ios, '9.0'
+use_frameworks!
+
+target 'IGListDemo' do
+  pod 'ObjectMapper', '~> 1.4'
+  pod 'IGListKit', '~> 2.0.0'
+
+end

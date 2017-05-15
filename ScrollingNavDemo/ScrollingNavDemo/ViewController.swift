@@ -8,8 +8,9 @@
 
 import UIKit
 import AMScrollingNavbar
+import LXReorderableCollectionViewFlowLayout
 
-class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, LXReorderableCollectionViewDataSource {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -20,6 +21,10 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         collectionView.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         //collectionView.collectionViewLayout.size = CGSize(width: 150, height: 150)
+        
+        let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(handleLongGesture))
+        collectionView.addGestureRecognizer(longPressGesture)
+        
     }
     
     
@@ -31,16 +36,35 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         }
     }
     
+    func handleLongGesture(gesture: UILongPressGestureRecognizer) {
+        switch(gesture.state) {
+            
+        case UIGestureRecognizerState.Began:
+            guard let selectedIndexPath = collectionView.indexPathForItemAtPoint(gesture.locationInView(collectionView)) else { break}
+            collectionView.beginInteractiveMovementForItemAtIndexPath(selectedIndexPath)
+        case UIGestureRecognizerState.Changed:
+            collectionView.updateInteractiveMovementTargetPosition(gesture.locationInView(gesture.view!))
+        case UIGestureRecognizerState.Ended:
+            collectionView.endInteractiveMovement()
+        default:
+            collectionView.cancelInteractiveMovement()
+        }
+    }
     
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 50
+        return 20
+    }
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 2
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath)
-        cell.backgroundColor = UIColor.whiteColor()
         
+        cell.backgroundColor = indexPath.section == 0 ?  .whiteColor() : .redColor()
+    
+
         return cell
     }
     
@@ -48,6 +72,12 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let controller = DetailViewController()
         navigationController?.pushViewController(controller, animated: true)
     }
+    
+    func collectionView(collectionView: UICollectionView, moveItemAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
+        //
+    }
+    
+    
 
 }
 

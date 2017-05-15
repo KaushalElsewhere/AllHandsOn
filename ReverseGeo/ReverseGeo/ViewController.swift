@@ -7,17 +7,33 @@
 //
 
 import UIKit
+import CoreLocation
+
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        search("Martin place")
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+    
+    func search(text: String) {
+        CLGeocoder().geocodeAddressString(text, completionHandler:{ (placemarks, error) -> Void in
+//            print(error)
+//            print(placemarks)
+            guard let nonNilMarks = placemarks else {return}
+        
+            for placemark in nonNilMarks {
+                print("locality: \(placemark.locality!)")
+                print("name: \(placemark.name!)")
+                print("country: \(placemark.country!)")
+                print("formatted address: \(placemark.addressDictionary!)")
+            }
+        })
     }
 
 

@@ -126,3 +126,22 @@ let result1 = divideOrError(42, y: 2)
 let result2 = divideOrError(42, y: 0)
 let result3 = divideOrError(0, y: 0)
 
+
+class A {
+    var mem: Int = 0
+}
+
+class B {
+    var mem: Int = 0
+}
+
+func convert<T, Y>(structure: T) -> Y {
+    let yy = Y
+    yy.mem = 100
+    return yy
+}
+
+
+
+
+
