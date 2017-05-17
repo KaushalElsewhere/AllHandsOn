@@ -29,6 +29,7 @@ struct CreateOrder
 
 struct CreateOrder_Price_Request {
     var selectedIndex: Int
+    //var isValid: Bool
 }
 
 struct CreateOrder_Price_Response {

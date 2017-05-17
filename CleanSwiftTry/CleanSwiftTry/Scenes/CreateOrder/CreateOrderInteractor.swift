@@ -18,6 +18,8 @@ protocol CreateOrderInteractorInput {
     
     
     func doSomething(_ request: CreateOrder.Something.Request)
+    
+    func getPaymentOptions()
 }
 
 protocol CreateOrderInteractorOutput {
@@ -53,5 +55,9 @@ class CreateOrderInteractor: CreateOrderInteractorInput {
     func calculatePrice(_ request: CreateOrder_Price_Request) {
         let response = CreateOrder_Price_Response(price: prices[request.selectedIndex])
         output.presentPrice(response)
+    }
+    
+    func getPaymentOptions() {
+        //
     }
 }

@@ -22,6 +22,8 @@ protocol CreateOrderViewControllerOutput {
     func calculatePrice(_ request: CreateOrder_Price_Request)
     
     func doSomething(_ request: CreateOrder.Something.Request)
+    
+    func getPaymentOptions()
 }
 
 class CreateOrderViewController: UITableViewController, CreateOrderViewControllerInput {
@@ -31,13 +33,6 @@ class CreateOrderViewController: UITableViewController, CreateOrderViewControlle
     @IBOutlet weak var shippingTextField: UITextField!
     
     @IBOutlet var pickerView: UIPickerView!
-    
-    lazy var titleLabel: UILabel = {
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 80, height: 28))
-        label.font = UIFont(name: "HelveticaNueue", size: 29)
-        label.textAlignment = .center
-        return label
-    }()
     
     override func awakeFromNib() {
         CreateOrderConfigurator.sharedInstance.configure(self)
@@ -50,16 +45,22 @@ class CreateOrderViewController: UITableViewController, CreateOrderViewControlle
     
     func configurePicker() {
         shippingTextField.inputView = self.pickerView
+        shippingTextField.becomeFirstResponder()
     }
   
     func doSomethingOnLoad() {
         configurePicker()
-        navigationItem.titleView = titleLabel
-        pickerView.selectRow(0, inComponent: 0, animated: false)
+        setDefaultValue()
         
     // NOTE: Ask the Interactor to do some work
-        let request = CreateOrder.Something.Request()
-        output.doSomething(request)
+        //let request = CreateOrder.Something.Request()
+        //output.doSomething(request)
+    }
+    
+    func setDefaultValue() {
+        pickerView.selectRow(0, inComponent: 0, animated: false)
+        let request = CreateOrder_Price_Request(selectedIndex: 0)
+        output.calculatePrice(request)
     }
   
     // MARK: - Display logic
@@ -71,8 +72,7 @@ class CreateOrderViewController: UITableViewController, CreateOrderViewControlle
     }
     
     func displayPrice(_ viewModel: CreateOrder_Price_ViewModel) {
-        titleLabel.text = viewModel.price
-        titleLabel.sizeToFit()
+        shippingTextField.text = viewModel.price
     }
 }
 extension CreateOrderViewController: UIPickerViewDataSource, UIPickerViewDelegate {
@@ -89,7 +89,7 @@ extension CreateOrderViewController: UIPickerViewDataSource, UIPickerViewDelegat
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        shippingTextField.text = output.shippingMethods[row]
+        
         let request = CreateOrder_Price_Request(selectedIndex: row)
         output.calculatePrice(request)
     }
