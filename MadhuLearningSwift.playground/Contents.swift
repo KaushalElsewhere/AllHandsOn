@@ -3,36 +3,18 @@
 import UIKit
 import Foundation
 
-typealias Completion = (_ result: [String], _ error: String?) -> Void
-
-func getData(userid: String, completion: Completion) {
-    //asdas
-    
-    
-    completion(["hello", "world"], nil)
-}
-
-getData(userid: "001") { (result, error) in
-    if let err = error {
-        print(err)
-        return
+func hasAnyMatches(list: [Int], condition: (Int) -> Bool) -> Bool {
+    for item in list {
+        if condition(item) {
+            return true
+        }
     }
-
-    print(result)
+    return false
 }
-
-
-//let result = getData { (result, error) in
-//    if let err = error {
-//        print(err)
-//        return
-//    }
-//    
-//    print(result)
-//}
-
-
-
-
+func lessThanTen(number: Int) -> Bool {
+    return number < 10
+}
+var numbers = [20, 19, 7, 12]
+hasAnyMatches(list: numbers, condition: lessThanTen)
 
 
